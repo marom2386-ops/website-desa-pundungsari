@@ -6,12 +6,16 @@
 <title>Desa Pundungsari — Kec. Tempursari, Kab. Lumajang</title>
 <meta name="description" content="Portal resmi Pemerintah Desa Pundungsari, Kecamatan Tempursari, Kabupaten Lumajang — profil desa, layanan administrasi, transparansi APBDes, dan berita desa.">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#14532d">
+<meta name="robots" content="index,follow">
+<meta property="og:locale" content="id_ID">
 <meta property="og:title" content="Desa Pundungsari — Kec. Tempursari, Kab. Lumajang">
 <meta property="og:description" content="Portal resmi Pemerintah Desa Pundungsari: profil, layanan administrasi, transparansi APBDes, dan berita desa.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2314532d'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23facc15' font-family='serif' font-weight='bold'%3EP%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#pg-beranda">Langsung ke konten</a>
 
 <header class="topbar">
   <div class="wrap topbar-in">
@@ -28,7 +32,7 @@
       <a href="#" data-nav="berita">Berita</a>
       <a href="#" data-nav="kontak">Kontak</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <button class="burger" id="burger" type="button" aria-label="Buka menu navigasi" aria-controls="nav" aria-expanded="false">☰</button>
   </div>
 </header>
 
@@ -49,6 +53,7 @@
   </div>
 
   <div class="wrap stats" id="statCards"></div>
+<div class="wrap"><p id="statNote" class="verification-note" role="status" hidden></p></div>
 
   <div class="wrap">
     <h2 class="sec-title">Layanan Unggulan</h2>
@@ -59,6 +64,7 @@
   <div class="wrap">
     <h2 class="sec-title">Berita Terbaru</h2>
     <div class="cards" id="beritaTop"></div>
+<p class="center"><a class="btn outline" href="#berita" data-nav="berita">Lihat seluruh berita</a></p>
   </div>
 </section>
 
@@ -96,13 +102,14 @@
       <ol class="steps">
         <li>Datang ke Balai Desa dengan membawa persyaratan (KTP &amp; KK).</li>
         <li>Sampaikan keperluan kepada operator pelayanan.</li>
-        <li>Surat diterbitkan, ditandatangani, dan diarsipkan digital.</li>
-        <li>Surat dapat dikirim sebagai PDF melalui WhatsApp.</li>
+        <li>Permohonan diverifikasi dan diproses sesuai kewenangan pemerintah desa.</li>
+        <li>Hasil pelayanan diserahkan sesuai prosedur dan arahan petugas.</li>
       </ol>
       <p class="muted">Jam layanan: <span id="jamLayanan"></span></p>
     </div>
     <h3 class="sec-title sm">Jenis Surat yang Dilayani</h3>
-    <div class="chips" id="layananChips"></div>
+    <p class="muted">Catatan: Pengurusan KTP-el, Kartu Keluarga, dan dokumen kependudukan lainnya diproses oleh instansi yang berwenang. Pemerintah desa membantu sesuai tugas dan kewenangannya.</p>
+<div class="chips" id="layananChips"></div>
   </div>
 </section>
 
@@ -111,6 +118,7 @@
   <div class="wrap narrow">
     <h2 class="sec-title">Transparansi APBDes <span id="thnApbdes"></span></h2>
     <p class="muted" id="apbdesNote"></p>
+<p id="apbdesAlert" class="verification-note" role="status" hidden></p>
     <div class="card pad">
       <div class="big-nums">
         <div><small>Total Pendapatan</small><strong id="apPendapatan"></strong></div>
@@ -127,6 +135,7 @@
   <div class="wrap">
     <h2 class="sec-title">Berita Desa</h2>
     <div class="cards" id="beritaAll"></div>
+<div id="artikelDetail" class="article-container" hidden></div>
   </div>
 </section>
 
@@ -167,7 +176,7 @@
       </ul>
     </div>
   </div>
-  <p class="copy">&copy; 2026 Pemerintah Desa Pundungsari &middot; Kec. Tempursari, Kab. Lumajang</p>
+  <p class="copy">&copy; 2026 Pemerintah Desa Pundungsari &middot; Kec. Tempursari, Kab. Lumajang. Informasi publik diverifikasi oleh petugas sebelum diterbitkan.</p>
 </footer>
 
 <script src="assets/js/data.js"></script>
