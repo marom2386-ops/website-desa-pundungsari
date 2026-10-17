@@ -1,89 +1,60 @@
-# Website Desa Pundungsari
+# Portal Pemerintah Desa Pundungsari
 
-Website profil desa + dasbor admin, dibuat dari awal. Siap dipasang ke
-Google Apps Script (pola yang sama dengan aplikasi operator V20:
-satu aplikasi, satu database Spreadsheet).
+Website publik statis di GitHub Pages yang dikelola melalui repositori GitHub. Data sensitif warga **tidak boleh** disimpan di sini.
 
-## Struktur file
+## Status perbaikan Oktober 2026
 
-```
-website-desa/
-├── index.html              → halaman publik (Beranda, Profil, Pemerintahan,
-│                             Layanan, Transparansi, Berita, Kontak)
-├── admin.html              → dasbor admin (login PIN demo: 1234)
-├── assets/
-│   ├── css/style.css       → tema halaman publik
-│   ├── css/admin.css       → tema dasbor
-│   ├── js/data.js          → LAPISAN DATA (sementara, contoh)
-│   ├── js/app.js           → logika halaman publik
-│   ├── js/admin.js         → logika dasbor
-│   └── img/hero.jpg        → foto hero (Semeru)
-└── README.md
-```
+- PIN demo `1234` dan dashboard yang seolah-olah menyimpan ke server telah **dinonaktifkan**.
+- Ketidaksesuaian angka penduduk (4.179 versus 2.021 + 2.146 = 4.167) ditandai **dalam verifikasi** tanpa menebak angka pengganti.
+- Ketidaksesuaian penjumlahan belanja APBDes (selisih Rp1) serta status perubahan anggaran terakhir ditandai **dalam verifikasi**.
+- Berita dapat dibuka sebagai halaman ringkasan dengan tautan langsung `#artikel-N` dan dibagikan. Artikel lengkap/foto belum tersedia, dan tidak dikarang.
+- Kontak email dan telepon dapat diklik; alur layanan disesuaikan agar tidak menjanjikan fitur daring yang belum tersedia.
+- Ada navigasi berbasis hash, elemen aksesibilitas dasar, dan tampilan artikel untuk telepon seluler.
 
-## Cara deploy ke Google Apps Script
+## Mengelola konten (sementara)
 
-**Opsi A — Web App Apps Script (disarankan, gratis, satu database):**
+1. Login ke GitHub sebagai kolaborator dengan hak akses pada repositori.
+2. Buka `assets/js/data.js`, edit data **publik dan terverifikasi** menggunakan editor GitHub.
+3. Simpan perubahan melalui commit / pull request dan tinjau sebelum merge.
+4. Setelah masuk branch `main`, GitHub Pages akan menerbitkan konten tersebut.
 
-1. Buat project Apps Script baru.
-2. Upload semua file:
-   - `index.html` → ganti nama jadi `Index`
-   - `admin.html` → `Admin`
-   - File CSS/JS/img → upload sebagai file HTML terpisah lalu
-     panggil dengan `<?!= include('style'); ?>`, atau gabungkan
-     inline untuk awal (cara cepat).
-3. `Code.gs` minimal:
+**Penting:** Jangan memasukkan NIK, nomor KK, tanggal lahir, nomor ponsel warga, alamat individual, dokumen pelayanan, kunci API, atau kata sandi ke repositori publik.
 
-```gs
-function doGet(e) {
-  const page = (e.parameter.page || 'index').toLowerCase();
-  if (page === 'admin') return HtmlService.createHtmlOutputFromFile('Admin')
-      .setTitle('Dasbor Admin — Desa Pundungsari');
-  return HtmlService.createHtmlOutputFromFile('Index')
-      .setTitle('Desa Pundungsari');
-}
-```
+## Data yang harus dikonfirmasi
 
-4. Deploy → New version → akses URL `/exec` untuk publik,
-   `/exec?page=admin` untuk dasbor.
+- Rekap penduduk agregat dari sumber resmi, berikut tanggal pemutakhirannya.
+- Dokumen Perdes APBDes / P-APBDes **terakhir** dan angka pendapatan, belanja, pembiayaan, serta klasifikasi sesuai format dokumen.
+- Logo pemerintah daerah, foto kantor / kegiatan asli, foto perangkat desa yang disetujui untuk publikasi.
+- Jam layanan, nomor telepon/email desa, batas wilayah, dan luas wilayah.
+- Artikel berita lengkap beserta foto, tanggal dan penanggung jawab publikasi.
 
-**Opsi B — Hosting statis** (Netlify/Vercel/GitHub Pages): upload
-apa adanya, langsung jalan. Dasbor tetap demo (localStorage).
+## Agar dapat mengelola tanpa mengedit kode GitHub
 
-## Menghubungkan ke Spreadsheet (mengganti data.js)
+Dibutuhkan CMS/backend terautentikasi (misalnya Apps Script + Google Sheet **khusus konten publik**, dengan akses dibatasi kepada akun petugas) atau layanan CMS terkelola. GitHub Pages sendiri hanya menyediakan hosting statis, bukan penyimpanan konten berfitur login dan hak akses.
 
-Ganti pemanggilan `DB` di `app.js`/`admin.js` dengan
-`google.script.run`:
+Rancangan CMS minimal:
+- Akun petugas dan hak akses editor/pemeriksa/penerbit.
+- Draf berita dengan judul, tanggal, isi lengkap, foto berizin, dan status publikasi.
+- Validasi input di server, log perubahan, dan fitur pemulihan.
+- API publik read-only khusus data yang layak ditampilkan.
+- Tidak terhubung secara langsung ke tabel sensitif kependudukan/aplikasi pelayanan warga.
 
-```gs
-// Code.gs
-function getDataWebsite() {
-  const ss = SpreadsheetApp.openById('ID_SPREADSHEET');
-  return {
-    berita: sheetToObjects(ss.getSheetByName('BERITA')),
-    perangkat: sheetToObjects(ss.getSheetByName('PERANGKAT')),
-    // ...
-  };
-}
-```
+Jangan memindahkan credential atau data pribadi ke client-side JavaScript. Konfigurasi dan pengujian backend harus dilakukan sebelum admin produksi dibuka.
 
-Sheet yang disarankan: `BERITA`, `PERANGKAT`, `LAYANAN`,
-`APBDES`, `STATISTIK`, `GALERI`, `PENGATURAN`.
+## Rencana penerbitan
 
-## Yang masih perlu diisi data resmi
+1. Periksa perubahan di pull request lalu merge ke main.
+2. Buka website di ponsel dan desktop; pastikan seluruh menu berfungsi.
+3. Periksa laporan console browser, tautan berita dan kontak, serta Google Maps.
+4. Masukkan angka resmi yang sudah diperiksa; ganti placeholder media dengan aset resmi.
+5. Baru aktifkan domain resmi desa dan CMS terautentikasi setelah tersedia.
 
-Semua yang bertanda **CONTOH** di `data.js`:
-- Nomor telepon & email desa, sejarah, visi-misi, batas wilayah, luas
-- Angka APBDes (rincian per bidang)
-- Data kependudukan (penduduk, KK, dusun/RT/RW)
-- Foto perangkat desa (`foto:` diisi path file)
-- Embed Google Maps balai desa di halaman Kontak
-- PIN admin asli (ganti `PIN_DEMO` di `admin.js`, atau pakai
-  sistem login yang sama dengan aplikasi operator V20)
+## Struktur
 
-## Pratinjau lokal
+- `index.html`: halaman informasi publik.
+- `assets/js/data.js`: dataset informasi **publik**.
+- `assets/js/app.js`: render halaman dan detail ringkasan berita.
+- `assets/css/style.css`: desain dan responsif.
+- `admin.html`: pemberitahuan admin nonaktif sampai tersedia backend aman.
 
-```bash
-cd ~/workspace/website-desa && python3 -m http.server 8080
-# buka http://localhost:8080  dan  http://localhost:8080/admin.html
-```
+Perubahan kode tidak otomatis memperbarui database kependudukan, Google Drive, KIM.ID, atau aplikasi operator. Integrasi harus dirancang terpisah dan diujikan.
