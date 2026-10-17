@@ -50,8 +50,8 @@ const DB = {
 
   // 17 jenis layanan surat (dari aplikasi operator)
   layanan: [
-    "Surat Keterangan", "Surat Keterangan Usaha (SKU)", "SKCK",
-    "KTP-el", "Kartu Keluarga (KK)", "Kematian", "Kelahiran",
+    "Surat Keterangan", "Surat Keterangan Usaha (SKU)", "Surat Pengantar SKCK",
+    "Fasilitasi KTP-el", "Fasilitasi Kartu Keluarga (KK)", "Kematian", "Kelahiran",
     "Pindah Penduduk", "Penduduk Datang", "Numpang Nikah (NCTR)",
     "Bepergian / Luar Negeri", "Pernyataan", "Kuasa",
     "Ahli Waris", "Izin Keramaian", "Legalisir Dokumen", "Nikah N1–N6",
@@ -60,7 +60,8 @@ const DB = {
   // Perubahan APBDes 2026 — Perdes No. 3 Tahun 2026 (angka resmi)
   apbdes: {
     tahun: 2026,
-    catatan: "Perubahan APBDes 2026 — Perdes Desa Pundungsari No. 3 Tahun 2026.",
+    catatan: "Data APBDes 2026 memerlukan verifikasi dengan dokumen perubahan anggaran terakhir sebelum dipublikasikan.",
+    status: "perlu_verifikasi",
     pendapatan: 1040634980,
     belanja: 1115723251,
     rincianBelanja: [
@@ -74,6 +75,7 @@ const DB = {
   // Data kependudukan resmi (master data, Okt 2026)
   statistik: {
     penduduk: 4179, kk: 1460, laki: 2021, perempuan: 2146,
+    status: "perlu_verifikasi", // 4.179 tidak sama dengan 2.021 + 2.146; jangan menebak angka baru
     dusun: 3,
   },
 
@@ -85,5 +87,5 @@ const DB = {
     { tgl: "18 Sep 2026", judul: "Musrenbangdes Penyusunan RKPDesa 2027", ringkas: "Musyawarah perencanaan pembangunan desa menjaring usulan prioritas untuk tahun anggaran 2027." },
   ],
 
-  galeri: [], // isi dengan nama file foto di assets/img/
+  galeri: [], // unggah foto asli dan berizin publikasi sebelum dipakai
 };
