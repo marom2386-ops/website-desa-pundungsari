@@ -1,0 +1,83 @@
+/* Dasbor Admin Desa Pundungsari — tema gelap sidebar, terang konten */
+:root{
+  --hijau:#15803d; --hijau-tua:#14532d; --side:#0f2e1d;
+  --bg:#f1f5f9; --card:#fff; --teks:#1f2937; --muted:#6b7280; --garis:#e5e7eb;
+  --radius:12px; --shadow:0 3px 14px rgba(0,0,0,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--teks)}
+.hidden{display:none!important}
+.muted{color:var(--muted);font-size:13px}
+.err{color:#dc2626;font-size:13px;min-height:18px}
+.ok{color:var(--hijau);font-size:14px}
+
+/* login */
+.login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--hijau-tua),var(--hijau));padding:20px}
+.login-card{background:#fff;border-radius:18px;padding:38px 34px;width:340px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,.25)}
+.login-logo{font-size:46px;margin-bottom:8px}
+.login-card h2{color:var(--hijau-tua)}
+.login-card p{color:var(--muted);font-size:14px;margin:4px 0 20px}
+.login-card input{width:100%;padding:13px;border:1.5px solid var(--garis);border-radius:10px;font-size:16px;text-align:center;margin-bottom:12px}
+
+/* tombol & form */
+.btn{display:inline-block;background:var(--hijau);color:#fff;padding:11px 22px;border-radius:10px;font-weight:600;border:2px solid var(--hijau);cursor:pointer;font-size:14px}
+.btn:hover{background:var(--hijau-tua);border-color:var(--hijau-tua)}
+.btn.full{width:100%}
+.btn.outline{background:#fff;color:var(--hijau)}
+.btn.sm{padding:7px 14px;font-size:13px}
+input,textarea{font-family:inherit;font-size:14px;padding:11px 13px;border:1.5px solid var(--garis);border-radius:10px;width:100%}
+input:focus,textarea:focus{outline:none;border-color:var(--hijau)}
+label{font-size:13px;font-weight:600;display:block}
+label input{margin-top:6px;font-weight:400}
+.form-grid{display:grid;gap:12px;max-width:560px}
+
+/* layout app */
+.app{display:flex;min-height:100vh}
+.side{width:230px;background:var(--side);color:#d7e9de;display:flex;flex-direction:column;position:sticky;top:0;height:100vh}
+.side-brand{padding:22px 20px;border-bottom:1px solid rgba(255,255,255,.1);font-size:17px}
+.side-brand small{display:block;font-size:11px;opacity:.6}
+.side nav{padding:14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.side nav a{color:#d7e9de;padding:11px 14px;border-radius:9px;font-size:14px}
+.side nav a:hover{background:rgba(255,255,255,.08)}
+.side nav a.active{background:var(--hijau);color:#fff}
+.side-foot{padding:16px 20px;color:#9fc3ad;font-size:13px;border-top:1px solid rgba(255,255,255,.1)}
+
+.main{flex:1;padding:26px;max-width:1000px}
+.main-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.main-head h2{color:var(--hijau-tua)}
+.apage{display:none}
+.apage.active{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+
+/* kpi */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:20px}
+.kpi{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;border-left:5px solid var(--hijau)}
+.kpi small{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+.kpi strong{font-size:32px;color:var(--hijau-tua);display:block;margin:4px 0}
+
+/* panel */
+.panel{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;margin-bottom:20px}
+.panel h3{color:var(--hijau-tua);font-size:16px;margin-bottom:14px}
+
+/* chart batang css */
+.chart{display:flex;align-items:flex-end;gap:10px;height:190px;padding-top:10px}
+.col{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px}
+.col i{width:70%;max-width:44px;background:linear-gradient(to top,var(--hijau),#4ade80);border-radius:6px 6px 0 0;display:block}
+.col span{font-size:11px;color:var(--muted)}
+
+/* tabel */
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th{text-align:left;padding:10px 12px;background:#f8fafc;color:var(--hijau-tua);border-bottom:2px solid var(--garis)}
+.tbl td{padding:10px 12px;border-bottom:1px solid var(--garis)}
+.tbl .aksi button{background:none;border:none;cursor:pointer;font-size:16px;margin-right:8px}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:#f0fdf4;border:1.5px solid #bbf7d0;border-radius:20px;padding:7px 15px;font-size:13px}
+
+@media(max-width:760px){
+  .side{width:64px}
+  .side-brand strong,.side-brand small,.side nav a{font-size:0}
+  .side nav a{font-size:20px;text-align:center}
+  .side-foot{font-size:0}
+  .main{padding:16px}
+}

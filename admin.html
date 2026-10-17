@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dasbor Admin — Desa Pundungsari</title>
+<link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginWrap" class="login-wrap">
+  <div class="login-card">
+    <div class="login-logo">🏛️</div>
+    <h2>Dasbor Admin</h2>
+    <p>Desa Pundungsari · Kec. Tempursari</p>
+    <input type="password" id="pinInput" placeholder="PIN Admin" inputmode="numeric">
+    <button class="btn full" id="btnLogin">Masuk</button>
+    <small class="muted">Demo: PIN <b>1234</b> (ganti di admin.js)</small>
+    <p class="err" id="loginErr"></p>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app" class="app hidden">
+  <aside class="side">
+    <div class="side-brand">🏛️ <strong>Pundungsari</strong><small>Dasbor Admin</small></div>
+    <nav>
+      <a href="#" data-adm="ringkasan" class="active">📊 Ringkasan</a>
+      <a href="#" data-adm="berita">📰 Kelola Berita</a>
+      <a href="#" data-adm="layanan">📄 Layanan &amp; Statistik</a>
+      <a href="#" data-adm="pengaturan">⚙️ Pengaturan</a>
+    </nav>
+    <a href="index.html" class="side-foot">← Lihat Website</a>
+  </aside>
+
+  <main class="main">
+    <header class="main-head">
+      <h2 id="admTitle">Ringkasan</h2>
+      <button class="btn outline sm" id="btnLogout">Keluar</button>
+    </header>
+
+    <!-- RINGKASAN -->
+    <section class="apage active" id="ad-ringkasan">
+      <div class="kpis">
+        <div class="kpi"><small>Penduduk</small><strong id="kPenduduk"></strong><span class="muted">jiwa (contoh)</span></div>
+        <div class="kpi"><small>Surat Bulan Ini</small><strong>42</strong><span class="muted">terbit (contoh)</span></div>
+        <div class="kpi"><small>Berita Tayang</small><strong id="kBerita"></strong><span class="muted">artikel</span></div>
+        <div class="kpi"><small>Kunjungan Web</small><strong>1.208</strong><span class="muted">30 hari (contoh)</span></div>
+      </div>
+      <div class="panel">
+        <h3>Surat Terbit per Bulan (contoh)</h3>
+        <div class="chart" id="chartSurat"></div>
+      </div>
+      <div class="panel">
+        <h3>Aktivitas Terakhir</h3>
+        <table class="tbl" id="tblAktivitas"></table>
+      </div>
+    </section>
+
+    <!-- BERITA -->
+    <section class="apage" id="ad-berita">
+      <div class="panel">
+        <h3>Tambah Berita</h3>
+        <div class="form-grid">
+          <input id="bJudul" placeholder="Judul berita">
+          <input id="bTgl" type="date">
+          <textarea id="bRingkas" placeholder="Ringkasan berita" rows="3"></textarea>
+          <button class="btn" id="btnTambahBerita">＋ Tambah Berita</button>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Daftar Berita</h3>
+        <table class="tbl" id="tblBerita"></table>
+      </div>
+    </section>
+
+    <!-- LAYANAN -->
+    <section class="apage" id="ad-layanan">
+      <div class="panel">
+        <h3>Jenis Layanan Aktif (<span id="nLayanan"></span>)</h3>
+        <div class="chips" id="admLayanan"></div>
+      </div>
+      <div class="panel">
+        <h3>Rekap Surat per Jenis — Oktober 2026 (contoh)</h3>
+        <table class="tbl" id="tblRekap"></table>
+      </div>
+    </section>
+
+    <!-- PENGATURAN -->
+    <section class="apage" id="ad-pengaturan">
+      <div class="panel">
+        <h3>Identitas Desa</h3>
+        <div class="form-grid">
+          <label>Nama Desa<input id="sNama" value="Pundungsari"></label>
+          <label>Telepon<input id="sTelp" value="(0334) 000000"></label>
+          <label>Email<input id="sEmail" value="pemdes.pundungsari@example.go.id"></label>
+          <label>Jam Layanan<input id="sJam" value="Senin–Jumat, 08.00–14.00 WIB"></label>
+          <button class="btn" id="btnSimpanSet">💾 Simpan Pengaturan</button>
+        </div>
+        <p class="ok" id="setOk"></p>
+      </div>
+      <div class="panel">
+        <h3>Catatan Deploy</h3>
+        <p class="muted">Versi demo ini menyimpan perubahan di browser saja (localStorage).
+        Saat dipasang ke Google Apps Script, hubungkan ke Spreadsheet sesuai README.md
+        agar perubahan tersimpan permanen dan tampil di website publik.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>

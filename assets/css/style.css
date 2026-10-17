@@ -1,0 +1,113 @@
+/* Website Desa Pundungsari — tema publik: cerah, bersih, minimalis */
+:root{
+  --hijau:#15803d; --hijau-tua:#14532d; --hijau-muda:#dcfce7;
+  --kuning:#facc15; --teks:#1f2937; --muted:#6b7280;
+  --bg:#f8fafc; --card:#ffffff; --garis:#e5e7eb;
+  --radius:14px; --shadow:0 4px 18px rgba(0,0,0,.07);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",system-ui,-apple-system,sans-serif;color:var(--teks);background:var(--bg);line-height:1.65}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.narrow{max-width:760px}
+a{color:var(--hijau);text-decoration:none}
+
+/* header */
+.topbar{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06);position:sticky;top:0;z-index:50}
+.topbar-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--teks)}
+.brand-logo{font-size:30px}
+.brand-txt strong{display:block;font-size:17px;line-height:1.2}
+.brand-txt small{color:var(--muted);font-size:12px}
+.nav{display:flex;gap:4px}
+.nav a{padding:10px 13px;border-radius:9px;color:var(--teks);font-size:15px}
+.nav a:hover{background:var(--hijau-muda)}
+.nav a.active{background:var(--hijau);color:#fff}
+.burger{display:none;background:none;border:none;font-size:24px;cursor:pointer}
+
+/* halaman */
+.page{display:none;padding-bottom:48px}
+.page.active{display:block;animation:fade .3s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+
+/* hero */
+.hero{position:relative;height:380px;overflow:hidden;border-radius:0 0 22px 22px}
+.hero img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.62),rgba(0,0,0,.08))}
+.hero-txt{position:absolute;bottom:44px;left:0;right:0;color:#fff;z-index:2}
+.hero-txt h1{font-size:40px;line-height:1.2;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+.hero-txt p{font-size:17px;opacity:.92;margin:6px 0 18px}
+.hero-btn{display:flex;gap:12px;flex-wrap:wrap}
+
+/* tombol */
+.btn{display:inline-block;background:var(--hijau);color:#fff;padding:12px 24px;border-radius:10px;font-weight:600;border:2px solid var(--hijau);cursor:pointer}
+.btn:hover{background:var(--hijau-tua);border-color:var(--hijau-tua)}
+.btn.ghost{background:rgba(255,255,255,.14);border-color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.28)}
+.btn.outline{background:#fff;color:var(--hijau)}
+.center{text-align:center;margin-top:18px}
+
+/* judul seksi */
+.sec-title{font-size:26px;margin:40px 0 20px;color:var(--hijau-tua);position:relative;padding-bottom:8px}
+.sec-title::after{content:"";position:absolute;left:0;bottom:0;width:56px;height:4px;border-radius:2px;background:var(--kuning)}
+.sec-title.sm{font-size:20px;margin-top:28px}
+
+/* kartu */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.card.pad{padding:26px}
+.card .c-body{padding:18px}
+.card h3{font-size:17px;margin-bottom:8px;color:var(--hijau-tua)}
+.card p{font-size:14px;color:var(--muted)}
+.badge{display:inline-block;background:var(--hijau-muda);color:var(--hijau-tua);font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;margin-bottom:10px}
+.tgl{font-size:12px;color:var(--muted);display:block;margin-bottom:6px}
+
+/* statistik */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:-46px;position:relative;z-index:5}
+.stat{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;text-align:center;border-top:4px solid var(--hijau)}
+.stat strong{font-size:30px;color:var(--hijau-tua);display:block}
+.stat small{color:var(--muted)}
+
+/* perangkat */
+.avatar{width:74px;height:74px;border-radius:50%;background:var(--hijau-muda);display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:700;color:var(--hijau-tua);margin-bottom:12px}
+
+/* chips layanan */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:#fff;border:1.5px solid var(--garis);border-radius:24px;padding:9px 18px;font-size:14px;box-shadow:var(--shadow)}
+
+/* langkah */
+.steps{margin:12px 0 12px 20px}
+.steps li{margin-bottom:8px}
+
+/* tabel */
+.tbl{width:100%;border-collapse:collapse;font-size:14px;margin:10px 0}
+.tbl td,.tbl th{padding:10px 12px;border-bottom:1px solid var(--garis);text-align:left;vertical-align:top}
+.tbl th{background:var(--hijau-muda);color:var(--hijau-tua)}
+
+/* transparansi */
+.big-nums{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:22px}
+.big-nums div{background:var(--hijau-muda);border-radius:12px;padding:18px;text-align:center}
+.big-nums strong{font-size:24px;color:var(--hijau-tua);display:block;margin-top:4px}
+.bar-row{margin-bottom:14px}
+.bar-row .lbl{display:flex;justify-content:space-between;font-size:14px;margin-bottom:6px}
+.bar{height:12px;background:var(--garis);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--hijau),#22c55e);border-radius:6px}
+
+.muted{color:var(--muted);font-size:13px}
+.list{margin:8px 0 8px 20px}
+.list li{margin-bottom:6px}
+
+/* footer */
+footer{background:var(--hijau-tua);color:#e7f5ec;margin-top:20px}
+.foot-in{display:flex;justify-content:space-between;align-items:center;padding:28px 20px;flex-wrap:wrap;gap:12px}
+.foot-links a{color:#fff;border:1.5px solid rgba(255,255,255,.5);padding:8px 18px;border-radius:9px;font-size:14px}
+.copy{text-align:center;font-size:12px;opacity:.7;padding:0 0 18px}
+
+/* responsif */
+@media(max-width:760px){
+  .nav{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;flex-direction:column;box-shadow:0 8px 16px rgba(0,0,0,.1);padding:8px}
+  .nav.open{display:flex}
+  .burger{display:block}
+  .hero{height:300px}
+  .hero-txt h1{font-size:28px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}

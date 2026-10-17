@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desa Pundungsari — Kec. Tempursari, Kab. Lumajang</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#" data-nav="beranda">
+      <span class="brand-logo">🏛️</span>
+      <span class="brand-txt"><strong>Desa Pundungsari</strong><small>Kec. Tempursari · Kab. Lumajang</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#" data-nav="beranda" class="active">Beranda</a>
+      <a href="#" data-nav="profil">Profil</a>
+      <a href="#" data-nav="pemerintahan">Pemerintahan</a>
+      <a href="#" data-nav="layanan">Layanan</a>
+      <a href="#" data-nav="transparansi">Transparansi</a>
+      <a href="#" data-nav="berita">Berita</a>
+      <a href="#" data-nav="kontak">Kontak</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main>
+<!-- ============ BERANDA ============ -->
+<section class="page active" id="pg-beranda">
+  <div class="hero">
+    <img src="assets/img/hero.jpg" alt="Panorama Desa Pundungsari dengan Gunung Semeru">
+    <div class="hero-txt wrap">
+      <h1>Selamat Datang di Desa Pundungsari</h1>
+      <p>Kecamatan Tempursari · Kabupaten Lumajang · Jawa Timur</p>
+      <div class="hero-btn">
+        <a href="#" class="btn" data-nav="layanan">Layanan Administrasi</a>
+        <a href="#" class="btn ghost" data-nav="profil">Profil Desa</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap stats" id="statCards"></div>
+
+  <div class="wrap">
+    <h2 class="sec-title">Layanan Unggulan</h2>
+    <div class="cards" id="layananTop"></div>
+    <p class="center"><a href="#" class="btn outline" data-nav="layanan">Lihat Semua Layanan</a></p>
+  </div>
+
+  <div class="wrap">
+    <h2 class="sec-title">Berita Terbaru</h2>
+    <div class="cards" id="beritaTop"></div>
+  </div>
+</section>
+
+<!-- ============ PROFIL ============ -->
+<section class="page" id="pg-profil">
+  <div class="wrap narrow">
+    <h2 class="sec-title">Profil Desa</h2>
+    <div class="card pad">
+      <h3>Sejarah Singkat</h3>
+      <p id="sejarah"></p>
+      <h3>Visi</h3>
+      <p id="visi"></p>
+      <h3>Misi</h3>
+      <ul id="misi" class="list"></ul>
+      <h3>Data Wilayah</h3>
+      <table class="tbl" id="tblWilayah"></table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PEMERINTAHAN ============ -->
+<section class="page" id="pg-pemerintahan">
+  <div class="wrap">
+    <h2 class="sec-title">Pemerintah Desa</h2>
+    <div class="cards" id="perangkatCards"></div>
+  </div>
+</section>
+
+<!-- ============ LAYANAN ============ -->
+<section class="page" id="pg-layanan">
+  <div class="wrap narrow">
+    <h2 class="sec-title">Layanan Administrasi</h2>
+    <div class="card pad">
+      <h3>Alur Pelayanan</h3>
+      <ol class="steps">
+        <li>Datang ke Balai Desa dengan membawa persyaratan (KTP &amp; KK).</li>
+        <li>Sampaikan keperluan kepada operator pelayanan.</li>
+        <li>Surat diterbitkan, ditandatangani, dan diarsipkan digital.</li>
+        <li>Surat dapat dikirim sebagai PDF melalui WhatsApp.</li>
+      </ol>
+      <p class="muted">Jam layanan: <span id="jamLayanan"></span></p>
+    </div>
+    <h3 class="sec-title sm">Jenis Surat yang Dilayani</h3>
+    <div class="chips" id="layananChips"></div>
+  </div>
+</section>
+
+<!-- ============ TRANSPARANSI ============ -->
+<section class="page" id="pg-transparansi">
+  <div class="wrap narrow">
+    <h2 class="sec-title">Transparansi APBDes <span id="thnApbdes"></span></h2>
+    <p class="muted" id="apbdesNote"></p>
+    <div class="card pad">
+      <div class="big-nums">
+        <div><small>Total Pendapatan</small><strong id="apPendapatan"></strong></div>
+        <div><small>Total Belanja</small><strong id="apBelanja"></strong></div>
+      </div>
+      <h3>Rincian Belanja per Bidang</h3>
+      <div id="apBars"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BERITA ============ -->
+<section class="page" id="pg-berita">
+  <div class="wrap">
+    <h2 class="sec-title">Berita Desa</h2>
+    <div class="cards" id="beritaAll"></div>
+  </div>
+</section>
+
+<!-- ============ KONTAK ============ -->
+<section class="page" id="pg-kontak">
+  <div class="wrap narrow">
+    <h2 class="sec-title">Kontak &amp; Lokasi</h2>
+    <div class="card pad">
+      <table class="tbl" id="tblKontak"></table>
+      <p class="muted">Peta lokasi menyusul — ganti dengan embed Google Maps balai desa.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <div><strong>Pemerintah Desa Pundungsari</strong><br><small>Kec. Tempursari, Kab. Lumajang, Jawa Timur</small></div>
+    <div class="foot-links"><a href="admin.html">Dasbor Admin</a></div>
+  </div>
+  <p class="copy">© 2026 Pemerintah Desa Pundungsari</p>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
