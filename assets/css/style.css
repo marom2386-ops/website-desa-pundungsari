@@ -34,7 +34,7 @@ a{color:var(--hijau);text-decoration:none}
 .hero img{width:100%;height:100%;object-fit:cover}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.62),rgba(0,0,0,.08))}
 .hero-txt{position:absolute;bottom:44px;left:0;right:0;color:#fff;z-index:2}
-.hero-txt h1{font-size:40px;line-height:1.2;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+.hero-txt h1{font-size:40px;line-height:1.25;text-shadow:0 1px 3px rgba(0,0,0,.35)}
 .hero-txt p{font-size:17px;opacity:.92;margin:6px 0 18px}
 .hero-btn{display:flex;gap:12px;flex-wrap:wrap}
 
@@ -52,17 +52,17 @@ a{color:var(--hijau);text-decoration:none}
 .sec-title.sm{font-size:20px;margin-top:28px}
 
 /* kartu */
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;align-items:stretch}
 .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
 .card.pad{padding:26px}
 .card .c-body{padding:18px}
-.card h3{font-size:17px;margin-bottom:8px;color:var(--hijau-tua)}
+.card h3{font-size:17px;margin-bottom:8px;color:var(--hijau-tua);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .card p{font-size:14px;color:var(--muted)}
 .badge{display:inline-block;background:var(--hijau-muda);color:var(--hijau-tua);font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;margin-bottom:10px}
 .tgl{font-size:12px;color:var(--muted);display:block;margin-bottom:6px}
 
 /* statistik */
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:-46px;position:relative;z-index:5}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:28px;position:relative;z-index:5}
 .stat{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;text-align:center;border-top:4px solid var(--hijau)}
 .stat strong{font-size:30px;color:var(--hijau-tua);display:block}
 .stat small{color:var(--muted)}
