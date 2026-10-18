@@ -1,5 +1,5 @@
 PUNDUNGSARI — TEMA WORDPRESS
-Versi 1.0.1 | GPL-2.0-or-later
+Versi 2.0.0 | GPL-2.0-or-later
 
 Tema blok dengan halaman depan, daftar berita, artikel, halaman, arsip,
 pencarian, dan halaman 404. Memakai blok bawaan WordPress; tidak memerlukan
@@ -12,7 +12,9 @@ Atur Beranda sebagai halaman utama dan Berita Desa sebagai halaman pos.
 Pilih lambang dalam blok Logo Situs melalui Tampilan > Editor > Header.
 Lambang juga disertakan di assets/images/lambang-lumajang.png.
 
-Lambang bersumber dari kop surat desa yang disediakan pengguna.
+Lambang berwarna bersumber dari situs resmi BKPSDM Kabupaten Lumajang.
+https://bkpsdm.lumajangkab.go.id/assets/images/logo-bkpsdm.png
+Ilustrasi perdesaan adalah gambar dekoratif, bukan foto lokasi desa.
 Gunakan sesuai peruntukan Pemerintah Desa Pundungsari.
 Paket tidak menyertakan foto rekaan, data pribadi penduduk, atau kata sandi.
 

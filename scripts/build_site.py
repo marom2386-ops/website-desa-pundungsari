@@ -55,11 +55,11 @@ def header(prefix, current):
     return f'''<a class="skip-link" href="#main-content">Langsung ke isi</a>
 <header>
  <div class="utility"><div class="wrap"><span>Pemerintah Desa Pundungsari · Kabupaten Lumajang</span><span class="service-hours">{E(D["jamLayanan"])}</span></div></div>
- <div class="wrap masthead">
+ <div class="wrap masthead modern-masthead">
   <a class="brand" href="{prefix}index.html"><img src="{prefix}assets/img/lambang-lumajang.png" alt="Lambang Kabupaten Lumajang" width="45" height="60"><span><small>Pemerintah Desa</small><strong>Pundungsari</strong><span>Kecamatan Tempursari · Kabupaten Lumajang</span></span></a>
-  <div class="header-contact">{icon("phone")}<div><span>Informasi pelayanan</span><a href="{E(wa())}" target="_blank" rel="noopener noreferrer">{E(D["telepon"])}</a></div></div>
+  <nav class="main-nav" aria-label="Menu utama"><div class="nav-inner">{links}</div></nav>
+  <a class="button nav-cta" href="{E(wa())}" target="_blank" rel="noopener noreferrer">Hubungi desa ↗</a>
  </div>
- <nav class="main-nav" aria-label="Menu utama"><div class="wrap nav-inner">{links}</div></nav>
 </header>'''
 
 def footer(prefix):
@@ -90,7 +90,7 @@ def page(path, title, desc, body, current="", noindex=False, contact=True, artic
 <meta name="twitter:card" content="summary"><link rel="icon" href="{prefix}assets/img/lambang-lumajang.png" type="image/png">
 {('<meta name="robots" content="noindex,follow">' if noindex else '')}
 {(f'<base href="{BASE}">' if path == '404.html' else '')}
-<link rel="stylesheet" href="{prefix}assets/css/public.css"><script defer src="{prefix}assets/js/public.js"></script>
+<link rel="stylesheet" href="{prefix}assets/css/public.css"><link rel="stylesheet" href="{prefix}assets/css/modern.css"><script defer src="{prefix}assets/js/public.js"></script>
 <script type="application/ld+json">{metadata}</script></head><body>
 {header(prefix,current)}<main id="main-content">{body}</main>{band() if contact else ''}{footer(prefix)}
 </body></html>'''
@@ -112,13 +112,15 @@ def empty(target):
     return f'<p class="empty-state" id="kosong-{target}" hidden>Informasi belum ditemukan. Coba kata lain atau <a href="kontak.html">hubungi petugas desa</a>.</p>'
 
 def build_public():
-    quick = "".join(f'<a class="quick-item" href="{path}">{icon(ic)}<div><h2>{title}</h2><p>{desc}</p></div>{icon("arrow","arrow")}</a>' for path,ic,title,desc in [("layanan.html","file","Panduan layanan","Temukan jenis layanan dan bahan yang dapat disiapkan."),("transparansi.html","chart","Transparansi desa","Informasi anggaran, peraturan, dan dokumen desa."),("kontak.html","pin","Kontak & lokasi","Jam pelayanan, alamat kantor, dan saluran komunikasi.")])
-    services = "".join(f'<a href="layanan.html#{s["id"]}">{E(s["nama"])}{icon("arrow")}</a>' for s in DATA["layanan"][:6])
-    body = f'''<section class="hero"><div class="wrap hero-grid"><div><span class="eyebrow">Tempursari · Lumajang · Jawa Timur</span><h1>Desa Pundungsari.<br><em>Informasi untuk kita bersama.</em></h1><p class="lead">Kenali desa, ikuti kabar kegiatan, dan temukan panduan pelayanan dalam satu tempat.</p><div class="button-row"><a class="button gold" href="layanan.html">Temukan layanan {icon("arrow")}</a><a class="button outline" href="profil.html">Kenali desa kami</a></div></div><aside class="office-card" aria-label="Informasi kantor desa"><span class="eyebrow">Pelayanan masyarakat</span><h2>Kantor Desa<br>Pundungsari</h2><div class="office-row">{icon("clock")}<div><strong>Jam pelayanan</strong><p>{E(D["jamLayanan"])}</p></div></div><div class="office-row">{icon("pin")}<div><strong>Alamat kantor</strong><p>{E(D["alamat"])}<br>Jawa Timur {E(D["kodePos"])}</p></div></div><p class="office-note"><a href="kontak.html">Lihat kontak dan petunjuk lokasi →</a></p></aside></div></section>
-<div class="quick-wrap"><div class="wrap quick-grid">{quick}</div></div>
-<section class="section"><div class="wrap intro-grid"><div><span class="eyebrow">Pelayanan warga</span><h2>Mulai dari informasi yang Anda perlukan.</h2><p>Pelajari layanan sebelum datang ke kantor desa. Petugas akan membantu menjelaskan dokumen dan proses sesuai keperluan Anda.</p><a class="text-link" href="layanan.html">Lihat seluruh panduan layanan →</a></div><div class="info-list">{services}</div></div></section>
-<section class="section tint"><div class="wrap"><div class="section-head"><div><span class="eyebrow">Kabar Pundungsari</span><h2>Berita &amp; kegiatan desa</h2></div><a class="text-link" href="berita.html">Semua berita →</a></div><div class="news-grid">{''.join(news_card(n) for n in DATA["berita"][:3])}</div></div></section>
-<section class="section"><div class="wrap intro-grid"><div><span class="eyebrow">Pemerintahan terbuka</span><h2>Informasi publik yang mudah dijangkau.</h2></div><div><p>Ketahui informasi anggaran, perencanaan, dan peraturan desa. Dokumen yang belum tersedia di halaman publik dapat ditanyakan melalui pelayanan informasi desa.</p><a class="button outline" href="transparansi.html">Informasi &amp; dokumen desa {icon("arrow")}</a></div></div></section>'''
+    tiles="".join(f'<article class="service-tile tile-{i}">{icon(ic)}<h3>{title}</h3><p>{desc}</p><a href="{url}">{label} ↗</a></article>' for i,(ic,title,desc,label,url) in enumerate([
+        ("file","Kependudukan","Panduan awal KTP-el, KK, kelahiran, dan administrasi penduduk.","Temukan panduan","layanan.html#ktp-el"),
+        ("news","Surat & pengantar","Informasi surat keterangan, usaha, serta keperluan administrasi.","Lihat layanan","layanan.html"),
+        ("chart","Informasi publik","Kenali informasi perencanaan, anggaran, dan dokumen desa.","Buka informasi","transparansi.html"),
+        ("pin","Kontak & lokasi","Alamat kantor, jam pelayanan, dan saluran komunikasi desa.","Hubungi desa","kontak.html")]))
+    body = f'''<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><span class="eyebrow hero-label">Ruang informasi warga</span><h1>Pundungsari.<br><em>Lebih dekat,<br>lebih terhubung.</em></h1><p class="lead">Temukan panduan layanan, kenali potensi desa, dan ikuti kabar Pundungsari. Semua berawal dari informasi yang mudah dijangkau.</p><div class="button-row"><a class="button" href="layanan.html">Jelajahi layanan ↗</a><a class="button outline" href="profil.html">Kenali desa kami →</a></div><p class="hero-location">TEMPURSARI · LUMAJANG · JAWA TIMUR</p></div><figure class="village-visual"><img class="hero-scene" src="assets/img/pundungsari-landscape.svg" width="720" height="760" alt="Ilustrasi suasana perdesaan, bukan foto lokasi Desa Pundungsari"><span class="visual-place">Pundungsari · Lumajang</span><span class="visual-badge">DESA KITA<br>CERITA KITA</span><div class="visual-hours">{icon("clock")}<div><strong>Jam pelayanan kantor desa</strong><span>Senin–Jumat · 08.00–14.00 WIB</span></div></div><figcaption>Ilustrasi suasana perdesaan</figcaption></figure></div></section>
+<section class="section service-section"><div class="wrap"><div class="section-head"><div><span class="eyebrow">Dari kebutuhan sehari-hari</span><h2>Ada yang bisa kami bantu?</h2></div><a class="text-link" href="layanan.html">Semua layanan ↗</a></div><div class="service-tiles">{tiles}</div></div></section>
+<section class="section about-section"><div class="wrap about-panel"><div><span class="eyebrow">Mengenal Pundungsari</span><h2>Berangkat dari desa,<br>tumbuh bersama.</h2></div><div><p>Di Kecamatan Tempursari, Kabupaten Lumajang, Pundungsari memiliki cerita tentang pertanian, usaha desa, dan kegiatan masyarakat. Kenali lebih dekat potensi serta arah pembangunan desa kita.</p><a class="button gold" href="profil.html">Jelajahi profil desa ↗</a><p class="about-links"><a href="pemerintahan.html">Pemerintahan desa →</a><a href="transparansi.html">Transparansi →</a></p></div></div></section>
+<section class="section tint"><div class="wrap"><div class="section-head"><div><span class="eyebrow">Cerita dari desa kita</span><h2>Kabar Pundungsari</h2></div><a class="text-link" href="berita.html">Semua berita ↗</a></div><div class="news-grid">{''.join(news_card(n) for n in DATA["berita"][:3])}</div></div></section>'''
     page("index.html","Portal Informasi Pemerintah Desa","Informasi Desa Pundungsari, Kecamatan Tempursari, Kabupaten Lumajang: profil, layanan warga, berita, transparansi, dan kontak kantor desa.",body,"beranda")
 
     misi = "".join(f"<li>{E(m)}</li>" for m in DATA["profil"]["misi"])
@@ -211,9 +213,9 @@ def wp_list(items, ordered=False):
     tag="ol" if ordered else "ul"
     return block("list",f'<{tag} class="wp-block-list">'+''.join(block("list-item",f"<li>{item}</li>") for item in items)+f"</{tag}>",{"ordered":True} if ordered else None)
 
-def wp_columns(items):
+def wp_columns(items, cls=""):
     cols="".join(block("column",'<div class="wp-block-column">'+item+"</div>") for item in items)
-    return block("columns",'<div class="wp-block-columns">'+cols+"</div>")
+    return block("columns",'<div class="wp-block-columns'+(' '+cls if cls else '')+'">'+cols+"</div>",{"className":cls} if cls else None)
 
 def wp_query(inherit=False):
     query={"perPage":9 if inherit else 3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":inherit}
@@ -224,24 +226,40 @@ def wp_query(inherit=False):
     return block("query",'<div class="wp-block-query">'+posts+pagination+noresults+'</div>',{"queryId":1,"query":query})
 
 def wp_header():
-    brand=group(block("site-logo",attrs={"width":42},selfclose=True)+group(block("site-title",attrs={"level":0},selfclose=True)+para("Kecamatan Tempursari · Kabupaten Lumajang","ps-location")),"ps-brand",layout="flex")
-    nav=block("navigation",block("page-list",selfclose=True),{"overlayMenu":"mobile","layout":{"type":"flex","justifyContent":"left"}})
-    return group(group(para("Pemerintah Desa Pundungsari · Kabupaten Lumajang"),"ps-top",align="full")+group(brand,"ps-masthead",align="wide")+group(nav,"ps-navigation",align="wide"),"ps-header",align="full")
+    brand=group(block("site-logo",attrs={"width":36},selfclose=True)+group(block("site-title",attrs={"level":0},selfclose=True)+para("Tempursari · Kabupaten Lumajang","ps-location")),"ps-brand",layout="flex")
+    nav=block("navigation",block("page-list",selfclose=True),{"className":"ps-navigation","overlayMenu":"mobile","layout":{"type":"flex","justifyContent":"right"}})
+    contact=group(buttons([("Hubungi desa ↗",wa())]),"ps-header-action")
+    return group(group(para("Pemerintah Desa Pundungsari · Tempursari, Lumajang"),"ps-top",align="full")+group(brand+nav+contact,"ps-masthead",align="wide",layout="flex"),"ps-header",align="full")
 
 def wp_footer():
     contact=heading("Desa Pundungsari")+para(E(D["alamat"])+", Jawa Timur "+E(D["kodePos"]))+para(E(D["jamLayanan"]))
-    links=heading("Informasi pelayanan",3)+para(f'<a href="{E(wa())}">WhatsApp: {E(D["telepon"])}</a>')+para(f'<a href="mailto:{E(D["email"])}">{E(D["email"])}</a>')+para(f'<a href="{E(MAP)}">Petunjuk lokasi kantor →</a>')
-    return group(group(wp_columns([contact,links])+para("Pemerintah Desa Pundungsari · Kecamatan Tempursari · Kabupaten Lumajang","ps-footer-note"),align="wide"),"ps-footer",align="full")
+    links=heading("Tetap terhubung",3)+para(f'<a href="{E(wa())}">WhatsApp: {E(D["telepon"])}</a>')+para(f'<a href="mailto:{E(D["email"])}">{E(D["email"])}</a>')+para(f'<a href="{E(MAP)}">Petunjuk lokasi kantor ↗</a>')
+    explore=heading("Jelajahi desa",3)+para('<a href="/?pagename=profil">Profil & potensi desa</a>')+para('<a href="/?pagename=layanan">Panduan layanan</a>')+para('<a href="/?pagename=privasi">Privasi pengunjung</a>')
+    return group(group(wp_columns([contact,explore,links])+para("© 2026 Pemerintah Desa Pundungsari · Informasi untuk kita bersama.","ps-footer-note"),align="wide"),"ps-footer",align="full")
 
 def wp_front():
-    hero_left=para("Tempursari · Lumajang · Jawa Timur","ps-eyebrow")+heading("Desa Pundungsari.<br>Informasi untuk kita bersama.",1)+para("Kenali desa, ikuti kabar kegiatan, dan temukan panduan pelayanan dalam satu tempat.")+buttons([("Temukan layanan","?pagename=layanan"),("Kenali desa kami","?pagename=profil")])
-    hero_right=group(heading("Kantor Desa Pundungsari",2)+para("<strong>Jam pelayanan</strong><br>"+E(D["jamLayanan"]))+para("<strong>Alamat kantor</strong><br>"+E(D["alamat"]))+para(f'<a href="{E(wa())}">Hubungi petugas desa →</a>'),"ps-office")
-    hero=group(group(wp_columns([hero_left,hero_right]),align="wide"),"ps-hero",align="full")
-    quick=wp_columns([heading("Panduan layanan",3)+para("Temukan jenis layanan dan bahan yang dapat disiapkan.")+buttons([("Lihat layanan","?pagename=layanan")]),heading("Transparansi desa",3)+para("Informasi anggaran, perencanaan, dan dokumen publik desa.")+buttons([("Informasi publik","?pagename=transparansi")]),heading("Kontak & lokasi",3)+para("Jam pelayanan, alamat kantor, dan saluran komunikasi.")+buttons([("Hubungi desa","?pagename=kontak")])])
-    quick=group(group(quick,align="wide"),"ps-quick",align="full")
-    news=group(para("Kabar Pundungsari","ps-eyebrow")+heading("Berita & kegiatan desa")+wp_query(False),align="wide")
-    info=group(heading("Perlu informasi lebih lanjut?")+para("Hubungi petugas atau datang ke kantor desa pada jam pelayanan.")+buttons([("Hubungi pemerintah desa",wa())]),"ps-contact",align="wide")
-    return hero+quick+group(news+info,"ps-main",align="full")
+    hero_left=group(para("Ruang informasi warga","ps-eyebrow")+heading('Pundungsari.<br><span class="ps-accent">Lebih dekat,<br>lebih terhubung.</span>',1)+para("Temukan panduan layanan, kenali potensi desa, dan ikuti kabar Pundungsari. Semua berawal dari informasi yang mudah dijangkau.")+buttons([("Jelajahi layanan ↗","/?pagename=layanan"),("Kenali desa kami →","/?pagename=profil")])+para("TEMPURSARI · LUMAJANG · JAWA TIMUR","ps-hero-location"),"ps-hero-copy")
+    office=group(para("<strong>Jam pelayanan kantor desa</strong>")+para("Senin–Jumat · 08.00–14.00 WIB","ps-hours"),"ps-office")
+    visual=group(para("Pundungsari · Lumajang","ps-place")+para("DESA KITA<br>CERITA KITA","ps-visual-badge")+office+para("Ilustrasi suasana perdesaan","ps-illustration-credit"),"ps-visual")
+    hero=group(group(wp_columns([hero_left,visual]),align="wide"),"ps-hero",align="full")
+    cards=[]
+    for title,desc,label,url,cls in [
+        ("Kependudukan","Panduan awal KTP-el, KK, kelahiran, dan administrasi penduduk.","Temukan panduan ↗","/?pagename=layanan#ktp-el","ps-card-citizen"),
+        ("Surat & pengantar","Informasi surat keterangan, usaha, serta keperluan administrasi.","Lihat layanan ↗","/?pagename=layanan","ps-card-letter"),
+        ("Informasi publik","Kenali informasi perencanaan, anggaran, dan dokumen desa.","Buka informasi ↗","/?pagename=transparansi","ps-card-public"),
+        ("Kontak & lokasi","Alamat kantor, jam pelayanan, dan saluran komunikasi desa.","Hubungi desa ↗","/?pagename=kontak","ps-card-contact")]:
+        cards.append(group(heading(title,3)+para(desc)+buttons([(label,url)]),"ps-service-card "+cls))
+    service_head=group(group(para("Dari kebutuhan sehari-hari","ps-eyebrow")+heading("Ada yang bisa kami bantu?"))+para('<a href="/?pagename=layanan">Semua layanan ↗</a>'),"ps-section-head",layout="flex")
+    service_grid=wp_columns(cards,"ps-service-grid")
+    services=group(group(service_head+service_grid,align="wide"),"ps-section ps-services-section",align="full")
+    about_left=para("Mengenal Pundungsari","ps-eyebrow")+heading("Berangkat dari desa,<br>tumbuh bersama.")
+    about_right=para("Di Kecamatan Tempursari, Kabupaten Lumajang, Pundungsari memiliki cerita tentang pertanian, usaha desa, dan kegiatan masyarakat. Kenali lebih dekat potensi serta arah pembangunan desa kita.")+buttons([("Jelajahi profil desa ↗","/?pagename=profil")])+para('<a href="/?pagename=pemerintahan">Pemerintahan desa →</a> &nbsp; <a href="/?pagename=transparansi">Transparansi →</a>',"ps-about-links")
+    about=group(group(group(wp_columns([about_left,about_right]),"ps-about"),align="wide"),"ps-section ps-about-section",align="full")
+    news_head=group(group(para("Cerita dari desa kita","ps-eyebrow")+heading("Kabar Pundungsari"))+para('<a href="/?pagename=berita">Semua berita ↗</a>'),"ps-section-head",layout="flex")
+    news=group(group(news_head+wp_query(False),align="wide"),"ps-section ps-news-section",align="full")
+    contact=group(group(heading("Mari tetap terhubung.")+para("Tanyakan keperluan Anda kepada petugas desa pada jam pelayanan."))+buttons([("Hubungi pemerintah desa ↗",wa())]),"ps-contact",align="wide",layout="flex")
+    contact=group(contact,"ps-section ps-contact-section",align="full")
+    return hero+services+about+news+contact
 
 def wp_pages():
     profile=heading("Desa Pundungsari")+para("Desa Pundungsari berada di Kecamatan Tempursari, Kabupaten Lumajang, Provinsi Jawa Timur.")+heading("Visi pembangunan desa")+para("Periode RPJMDes "+E(DATA["profil"]["periode"]))+para(E(DATA["profil"]["visi"]))+heading("Misi",3)+wp_list([E(m) for m in DATA["profil"]["misi"]],True)+heading("Potensi & kegiatan masyarakat")+para("Pertanian menjadi salah satu kegiatan masyarakat, antara lain komoditas cabai, pisang, dan palawija. Pengembangan usaha desa mencakup kegiatan BUMDesa Sumber Rejeki, pengelolaan Taman Pundungsari, dan usaha perikanan. Perpustakaan Desa Kasih Ibu menjadi bagian dari kegiatan literasi masyarakat.")+para("Untuk data statistik kependudukan dan wilayah terbaru, hubungi pelayanan informasi desa.")
@@ -271,7 +289,7 @@ Theme Name: Pundungsari
 Theme URI: https://github.com/marom2386-ops/website-desa-pundungsari
 Author: Pemerintah Desa Pundungsari
 Description: Tema blok untuk informasi publik Desa Pundungsari. Dikelola melalui Editor Situs dan blok bawaan WordPress.
-Version: 1.0.1
+Version: 2.0.0
 Requires at least: 6.6
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -281,22 +299,22 @@ Tags: block-patterns, full-site-editing, accessibility-ready
 */
 /* Styles are delivered by the native theme.json global styles system. */
 """.replace(", accessibility-ready",""))
-    css="""
-html{scroll-behavior:smooth}body{line-height:1.75}a{text-underline-offset:4px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #a46a15;outline-offset:4px}h1,h2,h3{text-wrap:balance}.wp-site-blocks{padding:0}.ps-header,.ps-footer,.ps-top,.ps-hero,.ps-quick{margin-block-start:0!important}.ps-top{background:#143e32;color:#fff;padding:8px 24px;font-size:.75rem}.ps-top p{max-width:1160px;margin:0 auto}.ps-masthead{padding:25px 24px}.ps-brand{gap:15px}.ps-brand .wp-block-site-title{font-family:Georgia,serif;font-size:1.8rem;line-height:1.25;font-weight:500}.ps-brand .wp-block-site-title a{text-decoration:none}.ps-location{font-size:.75rem;color:#52685f;margin:4px 0 0}.ps-navigation{border-block:1px solid #dce4de;padding:15px 24px;font-size:.86rem}.ps-navigation a{text-decoration:none}.ps-navigation a:hover{text-decoration:underline}.ps-hero{background:#143e32;color:#fff;padding:70px 24px}.ps-hero h1{font-size:clamp(2.3rem,4.7vw,4rem);letter-spacing:-.04em;line-height:1.15}.ps-hero .wp-block-columns{gap:65px;align-items:center}.ps-hero p{color:#dbe7df}.ps-hero .ps-eyebrow{color:#ecd6ab}.ps-eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:700;color:#52685f}.ps-hero a{color:#fff}.ps-hero .wp-block-button__link{background:#d9b46c;color:#18382d}.ps-office{background:#ffffff0b;border-top:3px solid #d9b46c;padding:28px}.ps-office h2{font-size:1.65rem}.ps-office p{font-size:.9rem}.ps-quick{background:#f7f5ee;padding:32px 24px;border-bottom:1px solid #dce4de}.ps-quick h3{font-family:inherit;font-size:1.05rem}.ps-quick p{font-size:.88rem;color:#52685f}.ps-quick .wp-block-button__link{background:transparent;color:#143e32;border:1px solid #b7c9bc;padding:10px 16px;font-size:.8rem}.ps-main{padding:64px 24px}.ps-news-card{border-top:2px solid #143e32;padding-top:22px}.ps-news-card .wp-block-post-title{font-family:inherit;font-size:1.15rem;line-height:1.45;font-weight:650}.ps-news-card .wp-block-post-title a{text-decoration:none}.ps-news-card .wp-block-post-date{font-size:.76rem;color:#52685f}.ps-news-card .wp-block-post-excerpt{font-size:.9rem;color:#52685f}.ps-news-card .wp-block-post-excerpt__more-text{font-size:.85rem}.wp-block-post-template{gap:30px}.ps-contact{margin-top:60px!important;padding:35px;background:#f7f5ee}.ps-footer{background:#eef2ec;border-top:1px solid #dce4de;padding:42px 24px}.ps-footer h2{font-size:1.6rem}.ps-footer h3{font-family:inherit;font-size:1rem}.ps-footer p{font-size:.86rem;color:#52685f}.ps-footer-note{border-top:1px solid #d5ddd4;padding-top:18px;font-size:.75rem!important}.ps-page{padding:48px 24px 64px}.ps-page .wp-block-post-title{font-size:clamp(2.2rem,4vw,3.4rem);letter-spacing:-.03em}.wp-block-details{border-bottom:1px solid #dce4de;padding:20px 0}.wp-block-details summary{font-weight:650;cursor:pointer}.wp-block-details>p,.wp-block-details>ul{font-size:.92rem}.wp-block-query-pagination{margin-top:35px}.wp-block-search__inside-wrapper{gap:8px}.wp-block-search__input{border:1px solid #a9bbb0;padding:12px}.wp-block-search__button{border:0;background:#143e32;color:white;padding:12px 18px;border-radius:5px}.wp-block-post-content>h2{margin-top:38px}.wp-block-post-content p{overflow-wrap:anywhere}
-@media(max-width:760px){.ps-masthead{padding:20px 18px}.ps-navigation{padding:13px 18px}.ps-hero{padding:45px 18px}.ps-hero .wp-block-columns{gap:30px}.ps-quick,.ps-main,.ps-page{padding-inline:18px}.ps-main{padding-block:45px}.ps-contact{padding:26px;margin-top:40px!important}.ps-footer{padding-inline:18px}.wp-block-post-template{grid-template-columns:1fr!important}.ps-brand .wp-block-site-title{font-size:1.5rem}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-""".strip()
+    css=(ROOT/"wordpress/design.css").read_text()
+    landscape="data:image/svg+xml,"+quote((ROOT/"assets/img/pundungsari-landscape.svg").read_text(),safe="")
+    css=css.replace("__LANDSCAPE__",landscape)
     config={"$schema":"https://schemas.wp.org/wp/6.6/theme.json","version":3,"settings":{"appearanceTools":True,"useRootPaddingAwareAlignments":True,"layout":{"contentSize":"780px","wideSize":"1160px"},"color":{"defaultPalette":False,"palette":[{"slug":"green","name":"Hijau desa","color":"#143e32"},{"slug":"gold","name":"Emas","color":"#d9b46c"},{"slug":"cream","name":"Krem","color":"#f7f5ee"},{"slug":"ink","name":"Teks","color":"#1d302a"},{"slug":"muted","name":"Teks sekunder","color":"#52685f"},{"slug":"white","name":"Putih","color":"#ffffff"}]},"spacing":{"units":["px","rem","em","%","vw"]},"typography":{"fluid":True,"fontFamilies":[{"slug":"system","name":"Sistem","fontFamily":"system-ui, -apple-system, Segoe UI, sans-serif"},{"slug":"serif","name":"Serif","fontFamily":"Georgia, Times New Roman, serif"}],"fontSizes":[{"slug":"small","name":"Kecil","size":"0.875rem"},{"slug":"medium","name":"Normal","size":"1rem"},{"slug":"large","name":"Besar","size":"1.5rem"},{"slug":"x-large","name":"Judul","size":"2.5rem"}]}},"styles":{"color":{"background":"#ffffff","text":"#1d302a"},"spacing":{"blockGap":"24px","padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"typography":{"fontFamily":"var:preset|font-family|system","fontSize":"1rem","lineHeight":"1.75"},"elements":{"heading":{"typography":{"fontFamily":"var:preset|font-family|serif","fontWeight":"500","lineHeight":"1.25"},"color":{"text":"#143e32"}},"link":{"color":{"text":"#143e32"}},"button":{"border":{"radius":"5px"},"color":{"background":"#143e32","text":"#ffffff"},"spacing":{"padding":{"top":"12px","right":"22px","bottom":"12px","left":"22px"}},"typography":{"fontSize":".9rem","fontWeight":"600"}}},"css":css},"templateParts":[{"name":"header","title":"Kepala halaman","area":"header"},{"name":"footer","title":"Kaki halaman","area":"footer"}]}
-    # Keep wide sections wide inside WordPress constrained layout wrappers.
-    config["styles"]["css"]+="""
-.ps-hero h1,.ps-hero h2{color:#fff}
-.ps-masthead,.ps-navigation{margin-block-start:0!important}
-.ps-masthead>.ps-brand,.ps-navigation>.wp-block-navigation,.ps-hero>.alignwide>.wp-block-columns,.ps-quick>.alignwide>.wp-block-columns,.ps-main>.alignwide>*,.ps-footer>.alignwide>*{max-width:none}
-.ps-hero h1{font-size:clamp(2.3rem,4.3vw,3.6rem)}
-.ps-hero .wp-block-column:first-child{flex-basis:60%!important}
-.ps-hero .wp-block-column:last-child{flex-basis:40%!important}
-.ps-brand .wp-block-site-logo img{height:56px;width:auto;object-fit:contain}
-"""
+    config["settings"]["layout"]["wideSize"]="1240px"
+    config["settings"]["color"]["palette"]=[
+        {"slug":"green","name":"Hijau zamrud","color":"#103f35"},
+        {"slug":"lime","name":"Limau lembut","color":"#d9eaa7"},
+        {"slug":"cream","name":"Putih alami","color":"#fbfcf8"},
+        {"slug":"ink","name":"Teks","color":"#173e31"},
+        {"slug":"muted","name":"Teks sekunder","color":"#748073"},
+        {"slug":"white","name":"Putih","color":"#ffffff"}]
+    config["styles"]["color"]={"background":"#fbfcf8","text":"#173e31"}
+    config["styles"]["elements"]["heading"]["typography"]={"fontFamily":"var:preset|font-family|system","fontWeight":"700","lineHeight":"1.25"}
+    config["styles"]["elements"]["button"]["border"]["radius"]="12px"
+    config["styles"]["elements"]["button"]["color"]["background"]="#103f35"
     write("wordpress/pundungsari/theme.json",json.dumps(config,ensure_ascii=False,indent=2))
     write("wordpress/pundungsari/parts/header.html",wp_header())
     write("wordpress/pundungsari/parts/footer.html",wp_footer())
@@ -315,7 +333,7 @@ html{scroll-behavior:smooth}body{line-height:1.75}a{text-underline-offset:4px}a:
     write("wordpress/pundungsari/templates/search.html",start+group(search,"ps-page",align="wide",tag="main")+finish)
     write("wordpress/pundungsari/templates/404.html",start+group(heading("Halaman tidak ditemukan",1)+para("Gunakan pencarian untuk menemukan informasi yang diperlukan.")+block("search",attrs={"label":"Cari informasi desa","buttonText":"Cari"},selfclose=True),"ps-page",tag="main")+finish)
     write("wordpress/pundungsari/README.txt","""PUNDUNGSARI — TEMA WORDPRESS
-Versi 1.0.1 | GPL-2.0-or-later
+Versi 2.0.0 | GPL-2.0-or-later
 
 Tema blok dengan halaman depan, daftar berita, artikel, halaman, arsip,
 pencarian, dan halaman 404. Memakai blok bawaan WordPress; tidak memerlukan
@@ -328,7 +346,9 @@ Atur Beranda sebagai halaman utama dan Berita Desa sebagai halaman pos.
 Pilih lambang dalam blok Logo Situs melalui Tampilan > Editor > Header.
 Lambang juga disertakan di assets/images/lambang-lumajang.png.
 
-Lambang bersumber dari kop surat desa yang disediakan pengguna.
+Lambang berwarna bersumber dari situs resmi BKPSDM Kabupaten Lumajang.
+https://bkpsdm.lumajangkab.go.id/assets/images/logo-bkpsdm.png
+Ilustrasi perdesaan adalah gambar dekoratif, bukan foto lokasi desa.
 Gunakan sesuai peruntukan Pemerintah Desa Pundungsari.
 Paket tidak menyertakan foto rekaan, data pribadi penduduk, atau kata sandi.
 
@@ -397,7 +417,7 @@ WordPress: https://desa-pundungsari.great-site.net/
 Dasbor: https://desa-pundungsari.great-site.net/wp-admin/
 
 Hosting WordPress memakai paket gratis InfinityFree dengan HTTPS. Tema Pundungsari
-1.0.1, delapan halaman, 17 panduan layanan, empat ringkasan berita, dan lambang
+2.0.0, delapan halaman, 17 panduan layanan, empat ringkasan berita, dan lambang
 sudah dipasang. WordPress diperbarui ke 7.1.3 saat penyiapan.
 
 Perubahan melalui dasbor WordPress tersimpan pada hosting WordPress. Perubahan
@@ -430,10 +450,14 @@ berbayar. Berita dikelola sebagai Pos dan informasi layanan sebagai Halaman.
 
 ## Sumber dan verifikasi
 
-Konten awal mempertahankan ringkasan pada situs sebelumnya. Alamat serta lambang
+Konten awal mempertahankan ringkasan pada situs sebelumnya. Alamat kantor
 dicocokkan dengan kop Surat Tugas PKAD Pundungsari Resmi 2026 milik pengguna.
-Lambang saja yang disertakan; tanda tangan/stempel dan dokumen sumber tidak
-dipublikasikan. Gambar lanskap rekaan pada versi lama tidak digunakan.
+Lambang berwarna diambil dari situs resmi BKPSDM Kabupaten Lumajang:
+https://bkpsdm.lumajangkab.go.id/assets/images/logo-bkpsdm.png
+Bentuk dan warnanya diperiksa terhadap halaman Lambang Daerah Pemkab:
+https://lumajangkab.go.id/main/single
+Tanda tangan/stempel dan dokumen sumber tidak dipublikasikan. Ilustrasi
+perdesaan pada beranda adalah gambar dekoratif, bukan foto lokasi desa.
 
 Angka kependudukan dan APBDes belum ditayangkan karena belum konsisten. Lihat
 docs/CATATAN_VERIFIKASI.md. Jangan menebak data agar angka tampak cocok.

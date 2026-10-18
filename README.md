@@ -12,7 +12,7 @@ WordPress: https://desa-pundungsari.great-site.net/
 Dasbor: https://desa-pundungsari.great-site.net/wp-admin/
 
 Hosting WordPress memakai paket gratis InfinityFree dengan HTTPS. Tema Pundungsari
-1.0.1, delapan halaman, 17 panduan layanan, empat ringkasan berita, dan lambang
+2.0.0, delapan halaman, 17 panduan layanan, empat ringkasan berita, dan lambang
 sudah dipasang. WordPress diperbarui ke 7.1.3 saat penyiapan.
 
 Perubahan melalui dasbor WordPress tersimpan pada hosting WordPress. Perubahan
@@ -45,10 +45,14 @@ berbayar. Berita dikelola sebagai Pos dan informasi layanan sebagai Halaman.
 
 ## Sumber dan verifikasi
 
-Konten awal mempertahankan ringkasan pada situs sebelumnya. Alamat serta lambang
+Konten awal mempertahankan ringkasan pada situs sebelumnya. Alamat kantor
 dicocokkan dengan kop Surat Tugas PKAD Pundungsari Resmi 2026 milik pengguna.
-Lambang saja yang disertakan; tanda tangan/stempel dan dokumen sumber tidak
-dipublikasikan. Gambar lanskap rekaan pada versi lama tidak digunakan.
+Lambang berwarna diambil dari situs resmi BKPSDM Kabupaten Lumajang:
+https://bkpsdm.lumajangkab.go.id/assets/images/logo-bkpsdm.png
+Bentuk dan warnanya diperiksa terhadap halaman Lambang Daerah Pemkab:
+https://lumajangkab.go.id/main/single
+Tanda tangan/stempel dan dokumen sumber tidak dipublikasikan. Ilustrasi
+perdesaan pada beranda adalah gambar dekoratif, bukan foto lokasi desa.
 
 Angka kependudukan dan APBDes belum ditayangkan karena belum konsisten. Lihat
 docs/CATATAN_VERIFIKASI.md. Jangan menebak data agar angka tampak cocok.
