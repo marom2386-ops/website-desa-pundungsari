@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /website-desa-pundungsari/admin.html
+Disallow: /website-desa-pundungsari/panduan-wordpress.html
+Sitemap: https://marom2386-ops.github.io/website-desa-pundungsari/sitemap.xml

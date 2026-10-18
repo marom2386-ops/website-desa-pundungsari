@@ -1,116 +1,27 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dasbor Admin — Desa Pundungsari</title>
-<link rel="stylesheet" href="assets/css/admin.css">
-</head>
-<body>
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pusat Pengelola — Desa Pundungsari</title><meta name="description" content="Pengelolaan website GitHub dan paket persiapan WordPress Desa Pundungsari.">
+<link rel="canonical" href="https://marom2386-ops.github.io/website-desa-pundungsari/admin.html"><meta name="theme-color" content="#143e32">
+<meta property="og:type" content="website"><meta property="og:locale" content="id_ID"><meta property="og:site_name" content="Desa Pundungsari"><meta property="og:title" content="Pusat Pengelola"><meta property="og:description" content="Pengelolaan website GitHub dan paket persiapan WordPress Desa Pundungsari."><meta property="og:url" content="https://marom2386-ops.github.io/website-desa-pundungsari/admin.html"><meta property="og:image" content="https://marom2386-ops.github.io/website-desa-pundungsari/assets/img/lambang-lumajang.png">
+<meta name="twitter:card" content="summary"><link rel="icon" href="assets/img/lambang-lumajang.png" type="image/png">
+<meta name="robots" content="noindex,follow">
 
-<!-- LOGIN -->
-<div id="loginWrap" class="login-wrap">
-  <div class="login-card">
-    <div class="login-logo">🏛️</div>
-    <h2>Dasbor Admin</h2>
-    <p>Desa Pundungsari · Kec. Tempursari</p>
-    <input type="password" id="pinInput" placeholder="PIN Admin" inputmode="numeric">
-    <button class="btn full" id="btnLogin">Masuk</button>
-    <small class="muted">Demo: PIN <b>1234</b> (ganti di admin.js)</small>
-    <p class="err" id="loginErr"></p>
-  </div>
-</div>
-
-<!-- APP -->
-<div id="app" class="app hidden">
-  <aside class="side">
-    <div class="side-brand">🏛️ <strong>Pundungsari</strong><small>Dasbor Admin</small></div>
-    <nav>
-      <a href="#" data-adm="ringkasan" class="active">📊 Ringkasan</a>
-      <a href="#" data-adm="berita">📰 Kelola Berita</a>
-      <a href="#" data-adm="layanan">📄 Layanan &amp; Statistik</a>
-      <a href="#" data-adm="pengaturan">⚙️ Pengaturan</a>
-    </nav>
-    <a href="index.html" class="side-foot">← Lihat Website</a>
-  </aside>
-
-  <main class="main">
-    <header class="main-head">
-      <h2 id="admTitle">Ringkasan</h2>
-      <button class="btn outline sm" id="btnLogout">Keluar</button>
-    </header>
-
-    <!-- RINGKASAN -->
-    <section class="apage active" id="ad-ringkasan">
-      <div class="kpis">
-        <div class="kpi"><small>Penduduk</small><strong id="kPenduduk"></strong><span class="muted">jiwa (contoh)</span></div>
-        <div class="kpi"><small>Surat Bulan Ini</small><strong>42</strong><span class="muted">terbit (contoh)</span></div>
-        <div class="kpi"><small>Berita Tayang</small><strong id="kBerita"></strong><span class="muted">artikel</span></div>
-        <div class="kpi"><small>Kunjungan Web</small><strong>1.208</strong><span class="muted">30 hari (contoh)</span></div>
-      </div>
-      <div class="panel">
-        <h3>Surat Terbit per Bulan (contoh)</h3>
-        <div class="chart" id="chartSurat"></div>
-      </div>
-      <div class="panel">
-        <h3>Aktivitas Terakhir</h3>
-        <table class="tbl" id="tblAktivitas"></table>
-      </div>
-    </section>
-
-    <!-- BERITA -->
-    <section class="apage" id="ad-berita">
-      <div class="panel">
-        <h3>Tambah Berita</h3>
-        <div class="form-grid">
-          <input id="bJudul" placeholder="Judul berita">
-          <input id="bTgl" type="date">
-          <textarea id="bRingkas" placeholder="Ringkasan berita" rows="3"></textarea>
-          <button class="btn" id="btnTambahBerita">＋ Tambah Berita</button>
-        </div>
-      </div>
-      <div class="panel">
-        <h3>Daftar Berita</h3>
-        <table class="tbl" id="tblBerita"></table>
-      </div>
-    </section>
-
-    <!-- LAYANAN -->
-    <section class="apage" id="ad-layanan">
-      <div class="panel">
-        <h3>Jenis Layanan Aktif (<span id="nLayanan"></span>)</h3>
-        <div class="chips" id="admLayanan"></div>
-      </div>
-      <div class="panel">
-        <h3>Rekap Surat per Jenis — Oktober 2026 (contoh)</h3>
-        <table class="tbl" id="tblRekap"></table>
-      </div>
-    </section>
-
-    <!-- PENGATURAN -->
-    <section class="apage" id="ad-pengaturan">
-      <div class="panel">
-        <h3>Identitas Desa</h3>
-        <div class="form-grid">
-          <label>Nama Desa<input id="sNama" value="Pundungsari"></label>
-          <label>Telepon<input id="sTelp" value="(0334) 000000"></label>
-          <label>Email<input id="sEmail" value="pemdes.pundungsari@example.go.id"></label>
-          <label>Jam Layanan<input id="sJam" value="Senin–Jumat, 08.00–14.00 WIB"></label>
-          <button class="btn" id="btnSimpanSet">💾 Simpan Pengaturan</button>
-        </div>
-        <p class="ok" id="setOk"></p>
-      </div>
-      <div class="panel">
-        <h3>Catatan Deploy</h3>
-        <p class="muted">Versi demo ini menyimpan perubahan di browser saja (localStorage).
-        Saat dipasang ke Google Apps Script, hubungkan ke Spreadsheet sesuai README.md
-        agar perubahan tersimpan permanen dan tampil di website publik.</p>
-      </div>
-    </section>
-  </main>
-</div>
-
-<script src="assets/js/data.js"></script>
-<script src="assets/js/admin.js"></script>
-</body>
-</html>
+<link rel="stylesheet" href="assets/css/public.css"><script defer src="assets/js/public.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "GovernmentOrganization", "name": "Pemerintah Desa Pundungsari", "url": "https://marom2386-ops.github.io/website-desa-pundungsari/", "telephone": "+6285236529079", "email": "desapundungsari87@gmail.com", "address": {"@type": "PostalAddress", "streetAddress": "Jalan Raya Pundungsari Nomor 16", "addressLocality": "Tempursari, Lumajang", "addressRegion": "Jawa Timur", "postalCode": "67375", "addressCountry": "ID"}}</script></head><body>
+<a class="skip-link" href="#main-content">Langsung ke isi</a>
+<header>
+ <div class="utility"><div class="wrap"><span>Pemerintah Desa Pundungsari · Kabupaten Lumajang</span><span class="service-hours">Senin–Jumat, 08.00–14.00 WIB</span></div></div>
+ <div class="wrap masthead">
+  <a class="brand" href="index.html"><img src="assets/img/lambang-lumajang.png" alt="Lambang Kabupaten Lumajang" width="45" height="60"><span><small>Pemerintah Desa</small><strong>Pundungsari</strong><span>Kecamatan Tempursari · Kabupaten Lumajang</span></span></a>
+  <div class="header-contact"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 1.9Z"/></svg><div><span>Informasi pelayanan</span><a href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20memperoleh%20informasi%20pelayanan." target="_blank" rel="noopener noreferrer">085236529079</a></div></div>
+ </div>
+ <nav class="main-nav" aria-label="Menu utama"><div class="wrap nav-inner"><a href="index.html">Beranda</a><a href="profil.html">Profil Desa</a><a href="pemerintahan.html">Pemerintahan</a><a href="layanan.html">Layanan</a><a href="transparansi.html">Transparansi</a><a href="berita.html">Berita</a><a href="kontak.html">Kontak</a></div></nav>
+</header><main id="main-content"><div class="page-intro"><div class="wrap"><div class="breadcrumbs"><a href="index.html">Beranda</a><span aria-hidden="true">/</span><span>Pusat Pengelola</span></div><h1>Pusat Pengelola</h1><p>Pengelolaan situs yang berjalan dan persiapan penggunaan WordPress.</p></div></div><section class="section"><div class="wrap"><div class="admin-grid"><section class="admin-card"><span class="eyebrow">Situs saat ini</span><h2>Kelola melalui GitHub</h2><p>Isi website publik disimpan pada berkas konten situs. Perubahan dilakukan dengan akun GitHub yang memiliki akses, kemudian halaman dibangun ulang sesuai panduan proyek.</p><a class="button" href="https://github.com/marom2386-ops/website-desa-pundungsari/edit/main/content/site.json" target="_blank" rel="noopener noreferrer">Buka berkas konten di GitHub</a><p><a href="https://github.com/marom2386-ops/website-desa-pundungsari/blob/main/README.md" target="_blank" rel="noopener noreferrer">Baca panduan pengelolaan GitHub →</a></p></section><section class="admin-card"><span class="eyebrow">Paket siap dipasang</span><h2>Gunakan WordPress</h2><p>Tema dan konten awal sudah disiapkan. Setelah tersedia hosting WordPress, petugas dapat mengelola berita dan halaman dari dasbor WordPress.</p><a class="button" href="downloads/pundungsari-wordpress.zip" download>Unduh tema WordPress</a><p><a href="panduan-wordpress.html">Panduan pemasangan dan pengelolaan →</a></p></section></div><div class="note"><p>WordPress belum terpasang pada alamat GitHub ini. Akses pengelola WordPress tersedia setelah pemasangan di hosting yang mendukungnya.</p></div></div></section></main><footer class="site-footer"><div class="wrap">
+ <div class="footer-grid">
+  <div><strong class="footer-brand">Desa Pundungsari</strong><p>Kecamatan Tempursari, Kabupaten Lumajang<br>Provinsi Jawa Timur</p><p>Jl. Raya Pundungsari No. 16, Kec. Tempursari, Kab. Lumajang<br>Jawa Timur 67375</p></div>
+  <div><h2>Informasi desa</h2><ul><li><a href="profil.html">Profil Desa</a></li><li><a href="pemerintahan.html">Pemerintahan</a></li><li><a href="transparansi.html">Transparansi &amp; dokumen</a></li><li><a href="berita.html">Berita Desa</a></li></ul></div>
+  <div><h2>Pelayanan</h2><ul><li><a href="layanan.html">Panduan layanan</a></li><li><a href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20memperoleh%20informasi%20pelayanan." target="_blank" rel="noopener noreferrer">WhatsApp: 085236529079</a></li><li><a href="mailto:desapundungsari87@gmail.com">desapundungsari87@gmail.com</a></li><li><a href="kontak.html">Alamat &amp; lokasi kantor</a></li></ul></div>
+ </div>
+ <div class="copyright"><span>© 2026 Pemerintah Desa Pundungsari</span><span><a href="privasi.html">Privasi</a> · <a href="admin.html">Pengelola</a></span></div>
+</div></footer>
+</body></html>

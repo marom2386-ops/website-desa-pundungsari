@@ -1,0 +1,270 @@
+{
+  "updated": "2026-10-18",
+  "desa": {
+    "nama": "Pundungsari",
+    "kecamatan": "Tempursari",
+    "kabupaten": "Lumajang",
+    "provinsi": "Jawa Timur",
+    "kodePos": "67375",
+    "alamat": "Jl. Raya Pundungsari No. 16, Kec. Tempursari, Kab. Lumajang",
+    "telepon": "085236529079",
+    "email": "desapundungsari87@gmail.com",
+    "jamLayanan": "Senin–Jumat, 08.00–14.00 WIB"
+  },
+  "profil": {
+    "sejarah": "Desa Pundungsari adalah salah satu desa di Kecamatan Tempursari, Kabupaten Lumajang, yang terletak di lereng tenggara Gunung Semeru. Masyarakatnya mayoritas bermata pencaharian sebagai petani dengan komoditas cabai, pisang, dan palawija.",
+    "visi": "Terwujudnya Masyarakat Pundungsari yang Berdaya Saing, Mandiri, Sejahtera, Berbudaya, Demokratis dan Bermartabat",
+    "misi": [
+      "Meningkatkan SDM aparatur desa dan mewujudkan tata kelola pemerintahan yang lebih baik.",
+      "Memberdayakan kelembagaan masyarakat dan Linmas desa.",
+      "Meningkatkan sarana dan prasarana umum, pertanian, dan transportasi.",
+      "Membina kerukunan umat beragama serta meningkatkan perekonomian masyarakat melalui pembinaan usaha kecil.",
+      "Memberdayakan gotong royong dan karang taruna, serta melestarikan budaya dan kesenian daerah.",
+      "Membentuk dan mengembangkan BUMDes serta mengoptimalkan sektor pertanian."
+    ],
+    "periode": "2020–2026"
+  },
+  "perangkat": [
+    {
+      "nama": "Mulyadi",
+      "jabatan": "Pj. Kepala Desa",
+      "foto": null
+    },
+    {
+      "nama": "Abdul Rohman",
+      "jabatan": "Sekretaris Desa",
+      "foto": null
+    },
+    {
+      "nama": "Singgih Firma A W",
+      "jabatan": "Kaur Perencanaan",
+      "foto": null
+    },
+    {
+      "nama": "Lia Khoiriyah",
+      "jabatan": "Kaur Keuangan",
+      "foto": null
+    },
+    {
+      "nama": "Ma'rifatul Khoiriyah",
+      "jabatan": "Kasi Pelayanan",
+      "foto": null
+    },
+    {
+      "nama": "Maskut Haryono",
+      "jabatan": "Kasi Kesra",
+      "foto": null
+    },
+    {
+      "nama": "Fendika Setiawan",
+      "jabatan": "Kasi Pemerintahan",
+      "foto": null
+    }
+  ],
+  "layanan": [
+    {
+      "id": "surat-keterangan",
+      "nama": "Surat keterangan",
+      "deskripsi": "Informasi dan pengurusan keterangan desa sesuai keperluan administrasi pemohon.",
+      "awal": [
+        "Identitas pemohon yang sudah dimiliki.",
+        "Keperluan surat dan dokumen pendukung yang tersedia."
+      ],
+      "kata_kunci": "domisili keterangan"
+    },
+    {
+      "id": "surat-keterangan-usaha",
+      "nama": "Surat Keterangan Usaha",
+      "deskripsi": "Informasi pengurusan keterangan usaha melalui pelayanan desa.",
+      "awal": [
+        "Identitas pemohon yang sudah dimiliki.",
+        "Nama, alamat, dan keterangan usaha."
+      ],
+      "kata_kunci": "sku usaha"
+    },
+    {
+      "id": "pengantar-skck",
+      "nama": "Informasi dan pengantar SKCK",
+      "deskripsi": "Informasi atau pengantar dari desa apabila diperlukan dalam pengurusan SKCK pada instansi berwenang.",
+      "awal": [
+        "Identitas pemohon yang sudah dimiliki.",
+        "Keterangan tujuan pengurusan SKCK."
+      ],
+      "kata_kunci": "skck kepolisian"
+    },
+    {
+      "id": "ktp-el",
+      "nama": "Pendampingan KTP-el",
+      "deskripsi": "Informasi dan pendampingan administrasi KTP-el; penerbitan mengikuti kewenangan instansi kependudukan.",
+      "awal": [
+        "Dokumen kependudukan yang sudah dimiliki.",
+        "Keterangan keperluan: baru, perubahan, hilang, atau rusak."
+      ],
+      "kata_kunci": "ktp kartu tanda penduduk elektronik"
+    },
+    {
+      "id": "kartu-keluarga",
+      "nama": "Pendampingan Kartu Keluarga",
+      "deskripsi": "Informasi pengurusan KK baru atau perubahan data keluarga melalui alur pelayanan kependudukan.",
+      "awal": [
+        "Kartu Keluarga yang tersedia.",
+        "Dokumen pendukung perubahan anggota atau data keluarga."
+      ],
+      "kata_kunci": "kk kartu keluarga pecah"
+    },
+    {
+      "id": "kematian",
+      "nama": "Administrasi kematian",
+      "deskripsi": "Informasi dan pengurusan keterangan desa terkait peristiwa kematian.",
+      "awal": [
+        "Identitas pelapor dan data penduduk yang meninggal.",
+        "Dokumen keterangan kematian yang tersedia."
+      ],
+      "kata_kunci": "kematian meninggal"
+    },
+    {
+      "id": "kelahiran",
+      "nama": "Administrasi kelahiran",
+      "deskripsi": "Informasi pengurusan keterangan dan pendampingan administrasi kelahiran.",
+      "awal": [
+        "Identitas orang tua dan Kartu Keluarga yang tersedia.",
+        "Dokumen keterangan kelahiran yang tersedia."
+      ],
+      "kata_kunci": "kelahiran akta bayi"
+    },
+    {
+      "id": "pindah-penduduk",
+      "nama": "Pindah penduduk",
+      "deskripsi": "Informasi dan pendampingan administrasi perpindahan penduduk.",
+      "awal": [
+        "Dokumen kependudukan yang tersedia.",
+        "Alamat tujuan pindah dan keterangan anggota keluarga yang pindah."
+      ],
+      "kata_kunci": "pindah keluar"
+    },
+    {
+      "id": "penduduk-datang",
+      "nama": "Penduduk datang",
+      "deskripsi": "Informasi administrasi bagi penduduk yang pindah datang ke Desa Pundungsari.",
+      "awal": [
+        "Dokumen kependudukan dan dokumen perpindahan yang tersedia.",
+        "Alamat tempat tinggal tujuan."
+      ],
+      "kata_kunci": "datang pindah masuk"
+    },
+    {
+      "id": "numpang-nikah",
+      "nama": "Informasi numpang nikah",
+      "deskripsi": "Informasi atau pengantar desa untuk keperluan perkawinan di wilayah lain.",
+      "awal": [
+        "Identitas calon pengantin yang tersedia.",
+        "Keterangan lokasi dan rencana pengurusan perkawinan."
+      ],
+      "kata_kunci": "nikah nctr perkawinan"
+    },
+    {
+      "id": "bepergian",
+      "nama": "Keterangan bepergian",
+      "deskripsi": "Informasi pengurusan keterangan desa terkait keperluan bepergian atau administrasi luar negeri.",
+      "awal": [
+        "Identitas pemohon yang tersedia.",
+        "Tujuan dan keperluan pengurusan keterangan."
+      ],
+      "kata_kunci": "bepergian luar negeri"
+    },
+    {
+      "id": "pernyataan",
+      "nama": "Administrasi surat pernyataan",
+      "deskripsi": "Informasi mengenai surat pernyataan sesuai keperluan pemohon dan kewenangan desa.",
+      "awal": [
+        "Identitas pihak yang membuat pernyataan.",
+        "Isi pernyataan serta dokumen pendukung yang tersedia."
+      ],
+      "kata_kunci": "pernyataan"
+    },
+    {
+      "id": "kuasa",
+      "nama": "Administrasi surat kuasa",
+      "deskripsi": "Informasi mengenai surat kuasa dan pengesahan sesuai keperluan serta kewenangan desa.",
+      "awal": [
+        "Identitas pemberi dan penerima kuasa yang tersedia.",
+        "Keterangan urusan yang dikuasakan."
+      ],
+      "kata_kunci": "kuasa"
+    },
+    {
+      "id": "ahli-waris",
+      "nama": "Informasi administrasi ahli waris",
+      "deskripsi": "Konsultasi awal mengenai administrasi ahli waris; tindak lanjut mengikuti jenis keperluan dan kewenangan yang berlaku.",
+      "awal": [
+        "Dokumen keluarga dan keterangan kematian yang tersedia.",
+        "Keterangan hubungan keluarga serta keperluan pengurusan."
+      ],
+      "kata_kunci": "waris ahli waris"
+    },
+    {
+      "id": "izin-keramaian",
+      "nama": "Informasi kegiatan dan keramaian",
+      "deskripsi": "Informasi atau pengantar desa terkait rencana kegiatan masyarakat; perizinan mengikuti instansi yang berwenang.",
+      "awal": [
+        "Identitas penanggung jawab kegiatan yang tersedia.",
+        "Rencana waktu, lokasi, dan jenis kegiatan."
+      ],
+      "kata_kunci": "izin keramaian kegiatan"
+    },
+    {
+      "id": "legalisasi",
+      "nama": "Legalisasi dokumen",
+      "deskripsi": "Informasi legalisasi atau pengesahan dokumen sesuai kewenangan pemerintah desa.",
+      "awal": [
+        "Dokumen asli dan salinan yang hendak dikonsultasikan.",
+        "Identitas pemohon yang tersedia."
+      ],
+      "kata_kunci": "legalisasi legalisir pengesahan"
+    },
+    {
+      "id": "administrasi-nikah",
+      "nama": "Administrasi nikah",
+      "deskripsi": "Informasi persyaratan dan pengantar administrasi perkawinan melalui pelayanan desa.",
+      "awal": [
+        "Dokumen identitas calon pengantin yang tersedia.",
+        "Keterangan keperluan dan rencana pengurusan perkawinan."
+      ],
+      "kata_kunci": "nikah n1 n6 perkawinan"
+    }
+  ],
+  "berita": [
+    {
+      "slug": "pembinaan-kim-lumajang",
+      "tanggal": "2026-10-15",
+      "judul": "KIM Desa Pundungsari Ikuti Pembinaan Komunitas Informasi Masyarakat se-Kabupaten Lumajang",
+      "ringkasan": "Abdul Rohman hadir sebagai anggota KIM Desa Pundungsari pada pembinaan yang dibuka Kepala Dinas Kominfo Kabupaten Lumajang di Sukodono.",
+      "kategori": "Kegiatan desa"
+    },
+    {
+      "slug": "monev-rkpdesa-apbdes",
+      "tanggal": "2026-10-07",
+      "judul": "Monev RKPDesa 2027 dan P-APBDes 2026 oleh Kecamatan Tempursari",
+      "ringkasan": "Kecamatan Tempursari melaksanakan monitoring dan evaluasi RKPDesa Tahun 2027 dan Perubahan APBDes 2026 di pendopo kecamatan.",
+      "kategori": "Kegiatan desa"
+    },
+    {
+      "slug": "musdes-rkpdesa-2027",
+      "tanggal": "2026-09-21",
+      "judul": "Musdes Pembahasan dan Kesepakatan RKPDesa 2027",
+      "ringkasan": "Musyawarah desa membahas dan menyepakati RKPDesa Tahun 2027 bersama BPD dan unsur masyarakat.",
+      "kategori": "Kegiatan desa"
+    },
+    {
+      "slug": "musrenbangdes-rkpdesa-2027",
+      "tanggal": "2026-09-18",
+      "judul": "Musrenbangdes Penyusunan RKPDesa 2027",
+      "ringkasan": "Musyawarah perencanaan pembangunan desa menjaring usulan prioritas untuk tahun anggaran 2027.",
+      "kategori": "Kegiatan desa"
+    }
+  ],
+  "publikasi": {
+    "statistik_terverifikasi": false,
+    "apbdes_terverifikasi": false
+  }
+}

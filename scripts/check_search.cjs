@@ -1,0 +1,18 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const { matches, normalize } = require('../assets/js/public.js');
+const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../content/site.json'), 'utf8'));
+const search = q => data.layanan.filter(s => matches(s.nama + ' ' + s.deskripsi + ' ' + s.kata_kunci, q)).map(s => s.id);
+assert.deepEqual(search('  kArTu   KELUARGA  '), ['kartu-keluarga']);
+assert.deepEqual(search('keluarga kartu'), ['kartu-keluarga']);
+assert.deepEqual(search('KTP'), ['ktp-el']);
+assert.deepEqual(search('SKU'), ['surat-keterangan-usaha']);
+assert.deepEqual(search('SKCK'), ['pengantar-skck']);
+assert.deepEqual(search('waris'), ['ahli-waris']);
+assert.equal(search('').length, 17);
+assert.equal(search('tidak-ada-layanan-ini').length, 0);
+assert.equal(matches('Musdes Pembahasan RKPDesa 2027','2027 musdes'), true);
+assert.equal(matches('KTP-el', '<img src=x onerror=alert(1)>'), false);
+assert.equal(normalize('  CAFÉ  Desa '),'cafe desa');
+console.log('PASS: search handles abbreviations, multiple words, case, spacing, empty queries, and literal user input.');

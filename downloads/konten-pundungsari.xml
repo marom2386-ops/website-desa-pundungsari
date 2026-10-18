@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:wp="http://wordpress.org/export/1.2/" version="2.0">
+  <channel>
+    <title>Desa Pundungsari</title>
+    <link>https://marom2386-ops.github.io/website-desa-pundungsari/</link>
+    <description>Konten awal portal informasi Desa Pundungsari</description>
+    <language>id-ID</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://marom2386-ops.github.io/website-desa-pundungsari/</wp:base_site_url>
+    <wp:base_blog_url>https://marom2386-ops.github.io/website-desa-pundungsari/</wp:base_blog_url>
+    <wp:author>
+      <wp:author_id>1</wp:author_id>
+      <wp:author_login>pengelola-desa</wp:author_login>
+      <wp:author_email>desapundungsari87@gmail.com</wp:author_email>
+      <wp:author_display_name>Pemerintah Desa Pundungsari</wp:author_display_name>
+      <wp:author_first_name />
+      <wp:author_last_name />
+    </wp:author>
+    <wp:category>
+      <wp:term_id>1</wp:term_id>
+      <wp:category_nicename>berita-desa</wp:category_nicename>
+      <wp:category_parent />
+      <wp:cat_name>Berita Desa</wp:cat_name>
+    </wp:category>
+    <item>
+      <title>Beranda</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/beranda/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded>&lt;!-- wp:paragraph --&gt;&lt;p&gt;Portal informasi Pemerintah Desa Pundungsari.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>101</wp:post_id>
+      <wp:post_date>2026-10-18 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-10-18 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>beranda</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=101</guid>
+    </item>
+    <item>
+      <title>Profil Desa</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/profil/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded>&lt;!-- wp:heading --&gt;&lt;h2 class="wp-block-heading"&gt;Desa Pundungsari&lt;/h2&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Desa Pundungsari berada di Kecamatan Tempursari, Kabupaten Lumajang, Provinsi Jawa Timur.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading --&gt;&lt;h2 class="wp-block-heading"&gt;Visi pembangunan desa&lt;/h2&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Periode RPJMDes 2020–2026&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Terwujudnya Masyarakat Pundungsari yang Berdaya Saing, Mandiri, Sejahtera, Berbudaya, Demokratis dan Bermartabat&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Misi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list {"ordered":true} --&gt;&lt;ol class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Meningkatkan SDM aparatur desa dan mewujudkan tata kelola pemerintahan yang lebih baik.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Memberdayakan kelembagaan masyarakat dan Linmas desa.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Meningkatkan sarana dan prasarana umum, pertanian, dan transportasi.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Membina kerukunan umat beragama serta meningkatkan perekonomian masyarakat melalui pembinaan usaha kecil.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Memberdayakan gotong royong dan karang taruna, serta melestarikan budaya dan kesenian daerah.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Membentuk dan mengembangkan BUMDes serta mengoptimalkan sektor pertanian.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:heading --&gt;&lt;h2 class="wp-block-heading"&gt;Potensi &amp; kegiatan masyarakat&lt;/h2&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pertanian menjadi salah satu kegiatan masyarakat, antara lain komoditas cabai, pisang, dan palawija. Pengembangan usaha desa mencakup kegiatan BUMDesa Sumber Rejeki, pengelolaan Taman Pundungsari, dan usaha perikanan. Perpustakaan Desa Kasih Ibu menjadi bagian dari kegiatan literasi masyarakat.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Untuk data statistik kependudukan dan wilayah terbaru, hubungi pelayanan informasi desa.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>102</wp:post_id>
+      <wp:post_date>2026-10-18 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-10-18 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>profil</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>1</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=102</guid>
+    </item>
+    <item>
+      <title>Pemerintahan</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/pemerintahan/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded>&lt;!-- wp:heading --&gt;&lt;h2 class="wp-block-heading"&gt;Perangkat Pemerintah Desa&lt;/h2&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Mulyadi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pj. Kepala Desa&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Abdul Rohman&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Sekretaris Desa&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Singgih Firma A W&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Kaur Perencanaan&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Lia Khoiriyah&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Kaur Keuangan&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Ma&amp;#x27;rifatul Khoiriyah&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Kasi Pelayanan&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Maskut Haryono&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Kasi Kesra&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Fendika Setiawan&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Kasi Pemerintahan&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>103</wp:post_id>
+      <wp:post_date>2026-10-18 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-10-18 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>pemerintahan</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>2</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=103</guid>
+    </item>
+    <item>
+      <title>Layanan</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/layanan/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded>&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pilih layanan untuk melihat penjelasan dan bahan awal konsultasi. Persyaratan akhir, biaya sesuai ketentuan, dan waktu penyelesaian dikonfirmasi kepada petugas.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:details {"anchor":"surat-keterangan"} --&gt;&lt;details class="wp-block-details" id="surat-keterangan"&gt;&lt;summary&gt;Surat keterangan&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi dan pengurusan keterangan desa sesuai keperluan administrasi pemohon.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Identitas pemohon yang sudah dimiliki.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Keperluan surat dan dokumen pendukung yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Surat%20keterangan."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"surat-keterangan-usaha"} --&gt;&lt;details class="wp-block-details" id="surat-keterangan-usaha"&gt;&lt;summary&gt;Surat Keterangan Usaha&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi pengurusan keterangan usaha melalui pelayanan desa.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Identitas pemohon yang sudah dimiliki.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Nama, alamat, dan keterangan usaha.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Surat%20Keterangan%20Usaha."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"pengantar-skck"} --&gt;&lt;details class="wp-block-details" id="pengantar-skck"&gt;&lt;summary&gt;Informasi dan pengantar SKCK&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi atau pengantar dari desa apabila diperlukan dalam pengurusan SKCK pada instansi berwenang.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Identitas pemohon yang sudah dimiliki.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Keterangan tujuan pengurusan SKCK.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Informasi%20dan%20pengantar%20SKCK."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"ktp-el"} --&gt;&lt;details class="wp-block-details" id="ktp-el"&gt;&lt;summary&gt;Pendampingan KTP-el&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi dan pendampingan administrasi KTP-el; penerbitan mengikuti kewenangan instansi kependudukan.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Dokumen kependudukan yang sudah dimiliki.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Keterangan keperluan: baru, perubahan, hilang, atau rusak.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Pendampingan%20KTP-el."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"kartu-keluarga"} --&gt;&lt;details class="wp-block-details" id="kartu-keluarga"&gt;&lt;summary&gt;Pendampingan Kartu Keluarga&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi pengurusan KK baru atau perubahan data keluarga melalui alur pelayanan kependudukan.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Kartu Keluarga yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Dokumen pendukung perubahan anggota atau data keluarga.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Pendampingan%20Kartu%20Keluarga."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"kematian"} --&gt;&lt;details class="wp-block-details" id="kematian"&gt;&lt;summary&gt;Administrasi kematian&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi dan pengurusan keterangan desa terkait peristiwa kematian.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Identitas pelapor dan data penduduk yang meninggal.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Dokumen keterangan kematian yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Administrasi%20kematian."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"kelahiran"} --&gt;&lt;details class="wp-block-details" id="kelahiran"&gt;&lt;summary&gt;Administrasi kelahiran&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi pengurusan keterangan dan pendampingan administrasi kelahiran.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Identitas orang tua dan Kartu Keluarga yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Dokumen keterangan kelahiran yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Administrasi%20kelahiran."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"pindah-penduduk"} --&gt;&lt;details class="wp-block-details" id="pindah-penduduk"&gt;&lt;summary&gt;Pindah penduduk&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi dan pendampingan administrasi perpindahan penduduk.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Dokumen kependudukan yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Alamat tujuan pindah dan keterangan anggota keluarga yang pindah.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Pindah%20penduduk."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"penduduk-datang"} --&gt;&lt;details class="wp-block-details" id="penduduk-datang"&gt;&lt;summary&gt;Penduduk datang&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi administrasi bagi penduduk yang pindah datang ke Desa Pundungsari.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Dokumen kependudukan dan dokumen perpindahan yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Alamat tempat tinggal tujuan.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Penduduk%20datang."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"numpang-nikah"} --&gt;&lt;details class="wp-block-details" id="numpang-nikah"&gt;&lt;summary&gt;Informasi numpang nikah&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi atau pengantar desa untuk keperluan perkawinan di wilayah lain.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Identitas calon pengantin yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Keterangan lokasi dan rencana pengurusan perkawinan.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Informasi%20numpang%20nikah."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"bepergian"} --&gt;&lt;details class="wp-block-details" id="bepergian"&gt;&lt;summary&gt;Keterangan bepergian&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi pengurusan keterangan desa terkait keperluan bepergian atau administrasi luar negeri.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Identitas pemohon yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Tujuan dan keperluan pengurusan keterangan.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Keterangan%20bepergian."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"pernyataan"} --&gt;&lt;details class="wp-block-details" id="pernyataan"&gt;&lt;summary&gt;Administrasi surat pernyataan&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi mengenai surat pernyataan sesuai keperluan pemohon dan kewenangan desa.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Identitas pihak yang membuat pernyataan.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Isi pernyataan serta dokumen pendukung yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Administrasi%20surat%20pernyataan."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"kuasa"} --&gt;&lt;details class="wp-block-details" id="kuasa"&gt;&lt;summary&gt;Administrasi surat kuasa&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi mengenai surat kuasa dan pengesahan sesuai keperluan serta kewenangan desa.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Identitas pemberi dan penerima kuasa yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Keterangan urusan yang dikuasakan.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Administrasi%20surat%20kuasa."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"ahli-waris"} --&gt;&lt;details class="wp-block-details" id="ahli-waris"&gt;&lt;summary&gt;Informasi administrasi ahli waris&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Konsultasi awal mengenai administrasi ahli waris; tindak lanjut mengikuti jenis keperluan dan kewenangan yang berlaku.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Dokumen keluarga dan keterangan kematian yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Keterangan hubungan keluarga serta keperluan pengurusan.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Informasi%20administrasi%20ahli%20waris."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"izin-keramaian"} --&gt;&lt;details class="wp-block-details" id="izin-keramaian"&gt;&lt;summary&gt;Informasi kegiatan dan keramaian&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi atau pengantar desa terkait rencana kegiatan masyarakat; perizinan mengikuti instansi yang berwenang.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Identitas penanggung jawab kegiatan yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Rencana waktu, lokasi, dan jenis kegiatan.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Informasi%20kegiatan%20dan%20keramaian."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"legalisasi"} --&gt;&lt;details class="wp-block-details" id="legalisasi"&gt;&lt;summary&gt;Legalisasi dokumen&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi legalisasi atau pengesahan dokumen sesuai kewenangan pemerintah desa.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Dokumen asli dan salinan yang hendak dikonsultasikan.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Identitas pemohon yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Legalisasi%20dokumen."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;&lt;!-- wp:details {"anchor":"administrasi-nikah"} --&gt;&lt;details class="wp-block-details" id="administrasi-nikah"&gt;&lt;summary&gt;Administrasi nikah&lt;/summary&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi persyaratan dan pengantar administrasi perkawinan melalui pelayanan desa.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading {"level":3} --&gt;&lt;h3 class="wp-block-heading"&gt;Bahan awal untuk konsultasi&lt;/h3&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:list --&gt;&lt;ul class="wp-block-list"&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Dokumen identitas calon pengantin yang tersedia.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;!-- wp:list-item --&gt;&lt;li&gt;Keterangan keperluan dan rencana pengurusan perkawinan.&lt;/li&gt;&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;&lt;!-- /wp:list --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Pelayanan dan penerbitan dokumen mengikuti kewenangan masing-masing instansi.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20menanyakan%20Administrasi%20nikah."&gt;Tanyakan layanan ini&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;&lt;/details&gt;&lt;!-- /wp:details --&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>104</wp:post_id>
+      <wp:post_date>2026-10-18 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-10-18 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>layanan</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>3</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=104</guid>
+    </item>
+    <item>
+      <title>Transparansi</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/transparansi/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded>&lt;!-- wp:paragraph --&gt;&lt;p&gt;Dokumen unduhan belum tersedia pada halaman ini. Untuk memperoleh informasi yang diperlukan, sampaikan jenis dokumen dan tahunnya kepada petugas desa.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading --&gt;&lt;h2 class="wp-block-heading"&gt;Anggaran desa&lt;/h2&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;APBDes dan perubahan APBDes berdasarkan tahun yang diperlukan.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading --&gt;&lt;h2 class="wp-block-heading"&gt;Realisasi dan pelaksanaan&lt;/h2&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Informasi realisasi anggaran dan pelaksanaan kegiatan yang dapat diberikan kepada publik.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading --&gt;&lt;h2 class="wp-block-heading"&gt;Perencanaan pembangunan&lt;/h2&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Dokumen perencanaan dan informasi prioritas pembangunan desa.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:heading --&gt;&lt;h2 class="wp-block-heading"&gt;Peraturan desa&lt;/h2&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Peraturan desa dan dokumen kebijakan sesuai judul, nomor, atau tahun yang diperlukan.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20memperoleh%20informasi%20dokumen%20publik%20desa."&gt;Minta informasi publik&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>105</wp:post_id>
+      <wp:post_date>2026-10-18 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-10-18 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>transparansi</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>4</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=105</guid>
+    </item>
+    <item>
+      <title>Berita Desa</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/berita/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded>&lt;!-- wp:paragraph --&gt;&lt;p&gt;Berita dan kegiatan Desa Pundungsari.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>106</wp:post_id>
+      <wp:post_date>2026-10-18 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-10-18 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>berita</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>5</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=106</guid>
+    </item>
+    <item>
+      <title>Kontak</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/kontak/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded>&lt;!-- wp:heading --&gt;&lt;h2 class="wp-block-heading"&gt;Kantor Desa Pundungsari&lt;/h2&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Jl. Raya Pundungsari No. 16, Kec. Tempursari, Kab. Lumajang, Jawa Timur 67375&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;&lt;strong&gt;Jam pelayanan&lt;/strong&gt;&lt;br&gt;Senin–Jumat, 08.00–14.00 WIB&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;&lt;strong&gt;Telepon&lt;/strong&gt;&lt;br&gt;&lt;a href="tel:+6285236529079"&gt;085236529079&lt;/a&gt;&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;&lt;strong&gt;Email&lt;/strong&gt;&lt;br&gt;&lt;a href="mailto:desapundungsari87@gmail.com"&gt;desapundungsari87@gmail.com&lt;/a&gt;&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;&lt;!-- wp:buttons --&gt;&lt;div class="wp-block-buttons"&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://wa.me/6285236529079?text=Halo%20Pemerintah%20Desa%20Pundungsari%2C%20saya%20ingin%20memperoleh%20informasi%20pelayanan."&gt;Buka WhatsApp&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;!-- wp:button --&gt;&lt;div class="wp-block-button"&gt;&lt;a class="wp-block-button__link wp-element-button" href="https://www.google.com/maps/search/?api=1&amp;amp;query=Balai%20Desa%20Pundungsari%2C%20Tempursari%2C%20Lumajang"&gt;Petunjuk lokasi&lt;/a&gt;&lt;/div&gt;&lt;!-- /wp:button --&gt;&lt;/div&gt;&lt;!-- /wp:buttons --&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>107</wp:post_id>
+      <wp:post_date>2026-10-18 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-10-18 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>kontak</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>6</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=107</guid>
+    </item>
+    <item>
+      <title>Privasi</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/privasi/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded>&lt;!-- wp:heading --&gt;&lt;h2 class="wp-block-heading"&gt;Informasi pengunjung&lt;/h2&gt;&lt;!-- /wp:heading --&gt;&lt;!-- wp:paragraph --&gt;&lt;p&gt;Halaman publik tidak meminta NIK, unggahan KK, atau data kependudukan pribadi. Tautan WhatsApp, email, dan Google Maps membuka layanan pihak terkait. Kebijakan privasi perlu diperbarui apabila pengelola menambahkan formulir, analitik, atau layanan lain.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;</content:encoded>
+      <excerpt:encoded />
+      <wp:post_id>108</wp:post_id>
+      <wp:post_date>2026-10-18 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-10-18 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>privasi</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>7</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=108</guid>
+    </item>
+    <item>
+      <title>KIM Desa Pundungsari Ikuti Pembinaan Komunitas Informasi Masyarakat se-Kabupaten Lumajang</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/pembinaan-kim-lumajang/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded>&lt;!-- wp:paragraph --&gt;&lt;p&gt;Abdul Rohman hadir sebagai anggota KIM Desa Pundungsari pada pembinaan yang dibuka Kepala Dinas Kominfo Kabupaten Lumajang di Sukodono.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;</content:encoded>
+      <excerpt:encoded>Abdul Rohman hadir sebagai anggota KIM Desa Pundungsari pada pembinaan yang dibuka Kepala Dinas Kominfo Kabupaten Lumajang di Sukodono.</excerpt:encoded>
+      <wp:post_id>109</wp:post_id>
+      <wp:post_date>2026-10-15 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-10-15 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>pembinaan-kim-lumajang</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=109</guid>
+      <category domain="category" nicename="berita-desa">Berita Desa</category>
+    </item>
+    <item>
+      <title>Monev RKPDesa 2027 dan P-APBDes 2026 oleh Kecamatan Tempursari</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/monev-rkpdesa-apbdes/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded>&lt;!-- wp:paragraph --&gt;&lt;p&gt;Kecamatan Tempursari melaksanakan monitoring dan evaluasi RKPDesa Tahun 2027 dan Perubahan APBDes 2026 di pendopo kecamatan.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;</content:encoded>
+      <excerpt:encoded>Kecamatan Tempursari melaksanakan monitoring dan evaluasi RKPDesa Tahun 2027 dan Perubahan APBDes 2026 di pendopo kecamatan.</excerpt:encoded>
+      <wp:post_id>110</wp:post_id>
+      <wp:post_date>2026-10-07 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-10-07 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>monev-rkpdesa-apbdes</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=110</guid>
+      <category domain="category" nicename="berita-desa">Berita Desa</category>
+    </item>
+    <item>
+      <title>Musdes Pembahasan dan Kesepakatan RKPDesa 2027</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/musdes-rkpdesa-2027/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded>&lt;!-- wp:paragraph --&gt;&lt;p&gt;Musyawarah desa membahas dan menyepakati RKPDesa Tahun 2027 bersama BPD dan unsur masyarakat.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;</content:encoded>
+      <excerpt:encoded>Musyawarah desa membahas dan menyepakati RKPDesa Tahun 2027 bersama BPD dan unsur masyarakat.</excerpt:encoded>
+      <wp:post_id>111</wp:post_id>
+      <wp:post_date>2026-09-21 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-09-21 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>musdes-rkpdesa-2027</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=111</guid>
+      <category domain="category" nicename="berita-desa">Berita Desa</category>
+    </item>
+    <item>
+      <title>Musrenbangdes Penyusunan RKPDesa 2027</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/musrenbangdes-rkpdesa-2027/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded>&lt;!-- wp:paragraph --&gt;&lt;p&gt;Musyawarah perencanaan pembangunan desa menjaring usulan prioritas untuk tahun anggaran 2027.&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;</content:encoded>
+      <excerpt:encoded>Musyawarah perencanaan pembangunan desa menjaring usulan prioritas untuk tahun anggaran 2027.</excerpt:encoded>
+      <wp:post_id>112</wp:post_id>
+      <wp:post_date>2026-09-18 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-09-18 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>musrenbangdes-rkpdesa-2027</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>post</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=112</guid>
+      <category domain="category" nicename="berita-desa">Berita Desa</category>
+    </item>
+    <item>
+      <title>Lambang Kabupaten Lumajang</title>
+      <link>https://marom2386-ops.github.io/website-desa-pundungsari/lambang-lumajang/</link>
+      <dc:creator>pengelola-desa</dc:creator>
+      <content:encoded />
+      <excerpt:encoded />
+      <wp:post_id>113</wp:post_id>
+      <wp:post_date>2026-10-18 08:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-10-18 01:00:00</wp:post_date_gmt>
+      <wp:post_modified>2026-10-18 08:00:00</wp:post_modified>
+      <wp:post_modified_gmt>2026-10-18 01:00:00</wp:post_modified_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>lambang-lumajang</wp:post_name>
+      <wp:status>inherit</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>attachment</wp:post_type>
+      <wp:post_password />
+      <wp:is_sticky>0</wp:is_sticky>
+      <guid isPermaLink="false">https://marom2386-ops.github.io/website-desa-pundungsari/?p=113</guid>
+      <wp:attachment_url>https://marom2386-ops.github.io/website-desa-pundungsari/assets/img/lambang-lumajang.png</wp:attachment_url>
+    </item>
+  </channel>
+</rss>

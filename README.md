@@ -1,89 +1,51 @@
 # Website Desa Pundungsari
 
-Website profil desa + dasbor admin, dibuat dari awal. Siap dipasang ke
-Google Apps Script (pola yang sama dengan aplikasi operator V20:
-satu aplikasi, satu database Spreadsheet).
+Situs publik GitHub Pages dan paket tema WordPress menggunakan konten yang sama.
+Pembaruan 18 Oktober 2026: halaman publik terpisah, layanan yang dapat dicari,
+berita dengan tautan sendiri, identitas resmi, dan paket WordPress.
 
-## Struktur file
+## Situs publik
 
-```
-website-desa/
-├── index.html              → halaman publik (Beranda, Profil, Pemerintahan,
-│                             Layanan, Transparansi, Berita, Kontak)
-├── admin.html              → dasbor admin (login PIN demo: 1234)
-├── assets/
-│   ├── css/style.css       → tema halaman publik
-│   ├── css/admin.css       → tema dasbor
-│   ├── js/data.js          → LAPISAN DATA (sementara, contoh)
-│   ├── js/app.js           → logika halaman publik
-│   ├── js/admin.js         → logika dasbor
-│   └── img/hero.jpg        → foto hero (Semeru)
-└── README.md
-```
+https://marom2386-ops.github.io/website-desa-pundungsari/
 
-## Cara deploy ke Google Apps Script
+## Memperbarui konten pada GitHub
 
-**Opsi A — Web App Apps Script (disarankan, gratis, satu database):**
+1. Ubah content/site.json menggunakan akun GitHub yang memiliki akses.
+2. Jalankan python3 scripts/build_site.py untuk membangun halaman dan paket.
+3. Jalankan python3 scripts/check_site.py dan node scripts/check_search.cjs.
+4. Commit dan push hasilnya ke main.
 
-1. Buat project Apps Script baru.
-2. Upload semua file:
-   - `index.html` → ganti nama jadi `Index`
-   - `admin.html` → `Admin`
-   - File CSS/JS/img → upload sebagai file HTML terpisah lalu
-     panggil dengan `<?!= include('style'); ?>`, atau gabungkan
-     inline untuk awal (cara cepat).
-3. `Code.gs` minimal:
+GitHub Pages tetap menyajikan hasil HTML, CSS, dan JavaScript. Dasbor PIN demo
+telah diganti dengan pusat pengelola yang menjelaskan jalur pengelolaan nyata.
 
-```gs
-function doGet(e) {
-  const page = (e.parameter.page || 'index').toLowerCase();
-  if (page === 'admin') return HtmlService.createHtmlOutputFromFile('Admin')
-      .setTitle('Dasbor Admin — Desa Pundungsari');
-  return HtmlService.createHtmlOutputFromFile('Index')
-      .setTitle('Desa Pundungsari');
-}
-```
+## Paket WordPress
 
-4. Deploy → New version → akses URL `/exec` untuk publik,
-   `/exec?page=admin` untuk dasbor.
+- downloads/pundungsari-wordpress.zip: unggah langsung sebagai tema WordPress.
+- downloads/konten-pundungsari.xml: impor halaman, empat ringkasan berita, dan lambang.
+- panduan-wordpress.html: panduan pemasangan dan pengelolaan.
+- wordpress/pundungsari/: sumber tema blok.
 
-**Opsi B — Hosting statis** (Netlify/Vercel/GitHub Pages): upload
-apa adanya, langsung jalan. Dasbor tetap demo (localStorage).
+WordPress memerlukan hosting yang mendukung PHP dan basis data. Paket ini tidak
+memasang WordPress pada GitHub Pages. Tidak ada akun hosting baru, pembelian,
+atau domain baru yang dibuat oleh perubahan ini.
 
-## Menghubungkan ke Spreadsheet (mengganti data.js)
+Tema memakai blok bawaan WordPress dan Global Styles, tanpa pembuat halaman
+berbayar. Berita dikelola sebagai Pos dan informasi layanan sebagai Halaman.
 
-Ganti pemanggilan `DB` di `app.js`/`admin.js` dengan
-`google.script.run`:
+## Sumber dan verifikasi
 
-```gs
-// Code.gs
-function getDataWebsite() {
-  const ss = SpreadsheetApp.openById('ID_SPREADSHEET');
-  return {
-    berita: sheetToObjects(ss.getSheetByName('BERITA')),
-    perangkat: sheetToObjects(ss.getSheetByName('PERANGKAT')),
-    // ...
-  };
-}
-```
+Konten awal mempertahankan ringkasan pada situs sebelumnya. Alamat serta lambang
+dicocokkan dengan kop Surat Tugas PKAD Pundungsari Resmi 2026 milik pengguna.
+Lambang saja yang disertakan; tanda tangan/stempel dan dokumen sumber tidak
+dipublikasikan. Gambar lanskap rekaan pada versi lama tidak digunakan.
 
-Sheet yang disarankan: `BERITA`, `PERANGKAT`, `LAYANAN`,
-`APBDES`, `STATISTIK`, `GALERI`, `PENGATURAN`.
+Angka kependudukan dan APBDes belum ditayangkan karena belum konsisten. Lihat
+docs/CATATAN_VERIFIKASI.md. Jangan menebak data agar angka tampak cocok.
+Data warga, KK, NIK, token, dan kata sandi tidak termasuk dalam paket.
 
-## Yang masih perlu diisi data resmi
+## Validasi
 
-Semua yang bertanda **CONTOH** di `data.js`:
-- Nomor telepon & email desa, sejarah, visi-misi, batas wilayah, luas
-- Angka APBDes (rincian per bidang)
-- Data kependudukan (penduduk, KK, dusun/RT/RW)
-- Foto perangkat desa (`foto:` diisi path file)
-- Embed Google Maps balai desa di halaman Kontak
-- PIN admin asli (ganti `PIN_DEMO` di `admin.js`, atau pakai
-  sistem login yang sama dengan aplikasi operator V20)
-
-## Pratinjau lokal
-
-```bash
-cd ~/workspace/website-desa && python3 -m http.server 8080
-# buka http://localhost:8080  dan  http://localhost:8080/admin.html
-```
+Pemeriksaan tautan lokal, judul, metadata, struktur halaman, paket tema,
+struktur blok WordPress, XML impor, angka publik, dan perilaku pencarian.
+Render WordPress pada hosting serta pemeriksaan visual browser tetap perlu
+dilakukan setelah hosting tersedia.
