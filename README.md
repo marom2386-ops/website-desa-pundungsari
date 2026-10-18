@@ -1,12 +1,22 @@
 # Website Desa Pundungsari
 
-Situs publik GitHub Pages dan paket tema WordPress menggunakan konten yang sama.
+Situs GitHub Pages dan WordPress dimulai dari sumber konten yang sama.
 Pembaruan 18 Oktober 2026: halaman publik terpisah, layanan yang dapat dicari,
-berita dengan tautan sendiri, identitas resmi, dan paket WordPress.
+berita dengan tautan sendiri, identitas resmi, dan WordPress aktif di hosting gratis.
 
 ## Situs publik
 
 https://marom2386-ops.github.io/website-desa-pundungsari/
+
+WordPress: https://desa-pundungsari.great-site.net/
+Dasbor: https://desa-pundungsari.great-site.net/wp-admin/
+
+Hosting WordPress memakai paket gratis InfinityFree dengan HTTPS. Tema Pundungsari
+1.0.1, delapan halaman, 17 panduan layanan, empat ringkasan berita, dan lambang
+sudah dipasang. WordPress diperbarui ke 7.1.3 saat penyiapan.
+
+Perubahan melalui dasbor WordPress tersimpan pada hosting WordPress. Perubahan
+situs GitHub dilakukan melalui repositori; keduanya tidak tersinkron otomatis.
 
 ## Memperbarui konten pada GitHub
 
@@ -25,9 +35,10 @@ telah diganti dengan pusat pengelola yang menjelaskan jalur pengelolaan nyata.
 - panduan-wordpress.html: panduan pemasangan dan pengelolaan.
 - wordpress/pundungsari/: sumber tema blok.
 
-WordPress memerlukan hosting yang mendukung PHP dan basis data. Paket ini tidak
-memasang WordPress pada GitHub Pages. Tidak ada akun hosting baru, pembelian,
-atau domain baru yang dibuat oleh perubahan ini.
+WordPress memakai hosting yang mendukung PHP dan basis data. GitHub tetap
+menyimpan sumber website, tema, dan paket pemasangan. Akun dan kata sandi
+pemasangan tidak disimpan dalam repositori. Jangan mengimpor kembali XML ke
+situs aktif karena konten awal sudah dimasukkan.
 
 Tema memakai blok bawaan WordPress dan Global Styles, tanpa pembuat halaman
 berbayar. Berita dikelola sebagai Pos dan informasi layanan sebagai Halaman.
@@ -47,5 +58,7 @@ Data warga, KK, NIK, token, dan kata sandi tidak termasuk dalam paket.
 
 Pemeriksaan tautan lokal, judul, metadata, struktur halaman, paket tema,
 struktur blok WordPress, XML impor, angka publik, dan perilaku pencarian.
-Render WordPress pada hosting serta pemeriksaan visual browser tetap perlu
-dilakukan setelah hosting tersedia.
+Halaman WordPress, rincian layanan, artikel, navigasi, gambar, serta tautan
+kontak diperiksa melalui browser pada hosting aktif. Tata letak desktop
+disesuaikan setelah pemeriksaan visual. Periksa kembali konten dan tampilan
+melalui perangkat warga setelah setiap pembaruan besar.

@@ -14,6 +14,8 @@ DATA = json.loads((ROOT / "content/site.json").read_text())
 D = DATA["desa"]
 BASE = "https://marom2386-ops.github.io/website-desa-pundungsari/"
 REPO = "https://github.com/marom2386-ops/website-desa-pundungsari"
+WP_BASE = "https://desa-pundungsari.great-site.net/"
+WP_ADMIN = "https://desa-pundungsari.great-site.net/wp-admin/"
 UPDATED = DATA["updated"]
 PHONE = "62" + D["telepon"].lstrip("0")
 WA = "https://wa.me/" + PHONE
@@ -158,23 +160,27 @@ def build_public():
     body = intro("Privasi Pengunjung","Informasi singkat mengenai penggunaan situs dan saluran komunikasi.") + '<section class="section"><div class="wrap article-shell prose"><h2>Informasi yang tersedia</h2><p>Website ini menyajikan informasi publik desa. Halaman publik tidak meminta akun, kata sandi, NIK, atau unggahan dokumen kependudukan.</p><h2>Saluran komunikasi</h2><p>Tautan WhatsApp, email, dan Google Maps membuka layanan pihak terkait. Informasi yang Anda kirim melalui layanan tersebut mengikuti pengaturan dan kebijakan layanan masing-masing.</p><h2>Pencarian di halaman</h2><p>Pencarian layanan dan berita memfilter isi yang sudah tampil pada perangkat Anda. Website ini tidak menyimpan kata pencarian melalui fitur tersebut.</p><h2>Hosting website</h2><p>Situs saat ini menggunakan GitHub Pages. Penyedia hosting dapat mencatat informasi teknis kunjungan sesuai kebijakannya.</p><h2>Perbaikan informasi</h2><p>Apabila menemukan informasi yang perlu diperbarui, silakan hubungi pemerintah desa melalui <a href="kontak.html">halaman kontak</a>.</p></div></section>'
     page("privasi.html","Privasi Pengunjung","Informasi privasi pengunjung website Desa Pundungsari dan penggunaan saluran komunikasi.",body,contact=False)
 
-    body = intro("Pusat Pengelola","Pengelolaan situs yang berjalan dan persiapan penggunaan WordPress.") + f'<section class="section"><div class="wrap"><div class="admin-grid"><section class="admin-card"><span class="eyebrow">Situs saat ini</span><h2>Kelola melalui GitHub</h2><p>Isi website publik disimpan pada berkas konten situs. Perubahan dilakukan dengan akun GitHub yang memiliki akses, kemudian halaman dibangun ulang sesuai panduan proyek.</p><a class="button" href="{REPO}/edit/main/content/site.json" target="_blank" rel="noopener noreferrer">Buka berkas konten di GitHub</a><p><a href="{REPO}/blob/main/README.md" target="_blank" rel="noopener noreferrer">Baca panduan pengelolaan GitHub →</a></p></section><section class="admin-card"><span class="eyebrow">Paket siap dipasang</span><h2>Gunakan WordPress</h2><p>Tema dan konten awal sudah disiapkan. Setelah tersedia hosting WordPress, petugas dapat mengelola berita dan halaman dari dasbor WordPress.</p><a class="button" href="downloads/pundungsari-wordpress.zip" download>Unduh tema WordPress</a><p><a href="panduan-wordpress.html">Panduan pemasangan dan pengelolaan →</a></p></section></div><div class="note"><p>WordPress belum terpasang pada alamat GitHub ini. Akses pengelola WordPress tersedia setelah pemasangan di hosting yang mendukungnya.</p></div></div></section>'
-    page("admin.html","Pusat Pengelola","Pengelolaan website GitHub dan paket persiapan WordPress Desa Pundungsari.",body,noindex=True,contact=False)
+    body = intro("Pusat Pengelola","Akses pengelolaan WordPress dan sumber website di GitHub.") + f'''<section class="section"><div class="wrap"><div class="admin-grid">
+<section class="admin-card"><span class="eyebrow">WordPress aktif</span><h2>Kelola berita & halaman</h2><p>Website WordPress sudah aktif pada hosting gratis InfinityFree. Masuk menggunakan akun yang dibuat saat pemasangan untuk memperbarui berita, layanan, dan informasi desa.</p><a class="button" href="{WP_ADMIN}" target="_blank" rel="noopener noreferrer">Masuk ke dasbor WordPress</a><p><a href="{WP_BASE}" target="_blank" rel="noopener noreferrer">Lihat website WordPress →</a></p><p><a href="panduan-wordpress.html">Panduan pengelolaan →</a></p></section>
+<section class="admin-card"><span class="eyebrow">Sumber & situs GitHub</span><h2>Kelola sumber website</h2><p>Sumber tema, paket instalasi, dan situs GitHub Pages tetap disimpan di repositori. Untuk memperbarui situs GitHub, ubah konten lalu bangun ulang sesuai panduan proyek.</p><a class="button" href="{REPO}/edit/main/content/site.json" target="_blank" rel="noopener noreferrer">Buka konten di GitHub</a><p><a href="{REPO}/blob/main/README.md" target="_blank" rel="noopener noreferrer">Panduan proyek GitHub →</a></p><p><a href="downloads/pundungsari-wordpress.zip" download>Unduh cadangan tema WordPress</a></p></section>
+</div><div class="note"><p>Perubahan melalui dasbor WordPress tersimpan pada hosting WordPress. Situs GitHub diperbarui melalui repositori; keduanya tidak tersinkron otomatis.</p></div></div></section>'''
+    page("admin.html","Pusat Pengelola","Dasbor WordPress aktif dan pengelolaan sumber GitHub Desa Pundungsari.",body,noindex=True,contact=False)
     build_guide()
     body = intro("Halaman tidak ditemukan","Alamat yang Anda buka tidak tersedia atau sudah berubah.") + '<section class="section"><div class="wrap"><p>Silakan kembali ke halaman utama atau gunakan menu untuk menemukan informasi desa.</p><a class="button" href="index.html">Kembali ke beranda</a></div></section>'
     page("404.html","Halaman Tidak Ditemukan","Kembali ke portal informasi Desa Pundungsari.",body,noindex=True,contact=False)
 
 def build_guide():
-    body = intro("Panduan WordPress","Paket tema dan konten awal Desa Pundungsari, siap dipasang ketika hosting WordPress tersedia.") + f'''<section class="section"><div class="wrap article-shell prose">
-<div class="note"><p><strong>Status saat ini:</strong> situs publik berjalan di GitHub Pages. Tema ini adalah paket WordPress yang sebenarnya, tetapi WordPress belum terpasang secara daring karena hostingnya belum tersedia.</p></div>
+    body = intro("Panduan WordPress","Pengelolaan website Desa Pundungsari yang sudah aktif.") + f'''<section class="section"><div class="wrap article-shell prose">
+<div class="note"><p><strong>Sudah aktif:</strong> <a href="{WP_BASE}">website WordPress Desa Pundungsari</a> berjalan di hosting gratis InfinityFree dengan HTTPS. Tema Pundungsari, delapan halaman, 17 panduan layanan, empat ringkasan berita, dan lambang desa sudah terpasang.</p></div>
+<h2>Pengelolaan sehari-hari</h2><ol><li><a href="{WP_ADMIN}">Masuk ke dasbor WordPress</a> menggunakan akun pemasangan.</li><li>Berita baru: Pos → Tambah Pos. Isi judul, naskah, dan foto kegiatan yang benar; periksa pratinjau lalu terbitkan.</li><li>Perbarui profil, layanan, kontak, atau transparansi melalui Laman → Semua Laman.</li><li>Ubah tampilan melalui Tampilan → Editor. Identitas situs dan lambang tersedia di Identity.</li><li>Untuk cadangan isi, buka Peralatan → Ekspor → Semua konten. Simpan juga cadangan basis data dan berkas hosting secara berkala.</li></ol><p>Beranda statis, halaman berita, bahasa Indonesia, zona waktu Jakarta, dan permalink nama tulisan sudah diatur. Pemasangan serta impor di bawah hanya diperlukan ketika menyiapkan ulang situs; jangan mengimpor kembali ke situs aktif agar tidak ada konten ganda.</p>
 <h2>1. Unduh paket yang diperlukan</h2><ul><li><a href="downloads/pundungsari-wordpress.zip" download>Tema Pundungsari untuk WordPress (.zip)</a></li><li><a href="downloads/konten-pundungsari.xml" download>Konten awal untuk diimpor (.xml)</a></li><li><a href="assets/img/lambang-lumajang.png" download>Lambang Kabupaten Lumajang (.png)</a></li></ul>
-<h2>2. Siapkan hosting</h2><p>Gunakan hosting yang mendukung WordPress dengan PHP, MySQL atau MariaDB, serta HTTPS. Gunakan WordPress versi stabil yang masih didukung, sekurang-kurangnya versi 6.6 untuk tema ini. Akun hosting dan domain sebaiknya berada dalam pengelolaan desa.</p><p>Hosting adalah tempat WordPress dijalankan. Domain adalah alamat website. Pembelian, pemilihan penyedia, dan pemasangan ke akun hosting belum termasuk dalam pekerjaan ini karena akun hosting belum tersedia.</p>
+<h2>2. Hosting dan alamat</h2><p>WordPress berjalan pada paket gratis InfinityFree di <a href="{WP_BASE}">{WP_BASE}</a>. Sumber tema dan situs GitHub Pages tetap disimpan di repositori. Perubahan isi di WordPress tidak otomatis memperbarui situs GitHub.</p><p>Untuk pemasangan ulang, gunakan hosting yang mendukung PHP, MySQL atau MariaDB, dan HTTPS. Gunakan WordPress versi stabil yang masih didukung, sekurang-kurangnya 6.6 untuk tema ini. Akun hosting sebaiknya tetap dalam pengelolaan desa.</p>
 <h2>3. Pasang dan aktifkan tema</h2><ol><li>Pasang WordPress melalui panel hosting.</li><li>Masuk ke dasbor WordPress pada alamat website tujuan, biasanya melalui /wp-admin.</li><li>Buka Tampilan → Tema → Tambah Tema → Unggah Tema.</li><li>Pilih berkas pundungsari-wordpress.zip, pasang, lalu aktifkan.</li></ol>
 <h2>4. Impor konten awal</h2><ol><li>Buka Perkakas → Impor → WordPress. Pasang pengimpor resmi apabila diminta.</li><li>Pilih konten-pundungsari.xml, lalu petakan penulis ke akun pengelola desa.</li><li>Pilih unduh dan impor lampiran untuk mengambil lambang dari situs GitHub saat ini, atau unggah lambang secara manual ke Media.</li><li>Jalankan impor satu kali agar tidak menambahkan konten ganda.</li></ol>
 <h2>5. Atur identitas dan navigasi</h2><ol><li>Di Pengaturan → Umum, isi judul situs Desa Pundungsari, bahasa Indonesia, dan zona waktu Jakarta.</li><li>Di Pengaturan → Membaca, pilih halaman statis: Beranda untuk halaman utama dan Berita Desa untuk halaman pos.</li><li>Di Pengaturan → Permalink, pilih Nama pos, lalu simpan.</li><li>Di Tampilan → Editor, buka bagian Header. Pilih blok Logo Situs dan gunakan lambang Lumajang yang telah diunggah.</li><li>Periksa menu navigasi. Tema memakai daftar halaman bawaan WordPress; sesuaikan urutannya dan hindari tautan Beranda ganda.</li><li>Periksa nomor telepon, email, jam pelayanan, nama perangkat, serta isi profil sebelum pengumuman resmi.</li></ol>
 <h2>6. Kelola berita dan halaman</h2><p>Untuk berita: buka Pos → Tambah Baru, isi judul dan naskah, tambahkan foto kegiatan yang benar, periksa pratinjau, lalu terbitkan. Untuk profil, layanan, pemerintahan, dan kontak: gunakan menu Halaman.</p><p>Tampilan beranda dan kepala/kaki halaman dapat disesuaikan melalui Tampilan → Editor. Tema memakai blok bawaan WordPress; tidak membutuhkan pembuat halaman berbayar.</p><p>Buat akun tersendiri untuk setiap petugas melalui Pengguna. Gunakan peran Editor untuk petugas pengelola isi; akun Administrator digunakan untuk pengaturan situs. Penulis dapat digunakan untuk petugas yang hanya menulis berita.</p>
 <h2>7. Lengkapi informasi publik</h2><p>Angka kependudukan dan APBDes belum dimasukkan ke paket publik karena data sumber belum cocok. Periksa catatan verifikasi dalam proyek. Setelah disahkan, masukkan angka beserta periode dan sumbernya, lalu unggah dokumen publik yang sudah diperiksa.</p><p>Empat berita awal mempertahankan ringkasan pada situs sebelumnya. Lengkapi naskah dan dokumentasi berdasarkan kegiatan nyata; paket ini tidak menambahkan kutipan, foto kegiatan, atau angka rekaan.</p>
-<h2>8. Pindahkan alamat setelah siap</h2><ol><li>Uji website tujuan melalui HP dan komputer, termasuk menu, pencarian, gambar, tautan WhatsApp, dan akun petugas.</li><li>Siapkan pencadangan dan pembaruan rutin WordPress, tema, serta plugin yang dipakai.</li><li>Setelah alamat WordPress final aktif, arahkan pengunjung dari situs GitHub ke alamat baru.</li><li>Umumkan satu alamat resmi yang akan digunakan masyarakat.</li></ol>
+<h2>8. Pemeliharaan dan pengumuman</h2><ol><li>Periksa perubahan melalui HP dan komputer, termasuk menu, gambar, tautan WhatsApp, dan berita.</li><li>Cadangkan isi, basis data, dan berkas sebelum perubahan besar. Perbarui WordPress, tema, serta plugin dari sumber resmi.</li><li>Lengkapi dokumen transparansi dengan berkas publik yang sudah diperiksa.</li><li>Gunakan alamat website yang sama secara konsisten saat menginformasikan kepada masyarakat.</li></ol>
 <h2>Rujukan</h2><ul><li><a href="https://wordpress.org/about/requirements/" target="_blank" rel="noopener noreferrer">Persyaratan hosting WordPress</a></li><li><a href="https://developer.wordpress.org/advanced-administration/wordpress/import/" target="_blank" rel="noopener noreferrer">Panduan impor WordPress</a></li><li><a href="https://wordpress.org/documentation/article/roles-and-capabilities/" target="_blank" rel="noopener noreferrer">Peran akun WordPress</a></li></ul><p class="meta">Disiapkan {tanggal(UPDATED)}.</p></div></section>'''
     page("panduan-wordpress.html","Panduan Pemasangan WordPress","Unduh tema, konten awal, dan panduan pemasangan WordPress untuk Desa Pundungsari.",body,noindex=True,contact=False)
 
@@ -235,7 +241,7 @@ def wp_front():
     quick=group(group(quick,align="wide"),"ps-quick",align="full")
     news=group(para("Kabar Pundungsari","ps-eyebrow")+heading("Berita & kegiatan desa")+wp_query(False),align="wide")
     info=group(heading("Perlu informasi lebih lanjut?")+para("Hubungi petugas atau datang ke kantor desa pada jam pelayanan.")+buttons([("Hubungi pemerintah desa",wa())]),"ps-contact",align="wide")
-    return hero+quick+group(news+info,"ps-main")
+    return hero+quick+group(news+info,"ps-main",align="full")
 
 def wp_pages():
     profile=heading("Desa Pundungsari")+para("Desa Pundungsari berada di Kecamatan Tempursari, Kabupaten Lumajang, Provinsi Jawa Timur.")+heading("Visi pembangunan desa")+para("Periode RPJMDes "+E(DATA["profil"]["periode"]))+para(E(DATA["profil"]["visi"]))+heading("Misi",3)+wp_list([E(m) for m in DATA["profil"]["misi"]],True)+heading("Potensi & kegiatan masyarakat")+para("Pertanian menjadi salah satu kegiatan masyarakat, antara lain komoditas cabai, pisang, dan palawija. Pengembangan usaha desa mencakup kegiatan BUMDesa Sumber Rejeki, pengelolaan Taman Pundungsari, dan usaha perikanan. Perpustakaan Desa Kasih Ibu menjadi bagian dari kegiatan literasi masyarakat.")+para("Untuk data statistik kependudukan dan wilayah terbaru, hubungi pelayanan informasi desa.")
@@ -265,7 +271,7 @@ Theme Name: Pundungsari
 Theme URI: https://github.com/marom2386-ops/website-desa-pundungsari
 Author: Pemerintah Desa Pundungsari
 Description: Tema blok untuk informasi publik Desa Pundungsari. Dikelola melalui Editor Situs dan blok bawaan WordPress.
-Version: 1.0.0
+Version: 1.0.1
 Requires at least: 6.6
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -281,8 +287,16 @@ html{scroll-behavior:smooth}body{line-height:1.75}a{text-underline-offset:4px}a:
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 """.strip()
     config={"$schema":"https://schemas.wp.org/wp/6.6/theme.json","version":3,"settings":{"appearanceTools":True,"useRootPaddingAwareAlignments":True,"layout":{"contentSize":"780px","wideSize":"1160px"},"color":{"defaultPalette":False,"palette":[{"slug":"green","name":"Hijau desa","color":"#143e32"},{"slug":"gold","name":"Emas","color":"#d9b46c"},{"slug":"cream","name":"Krem","color":"#f7f5ee"},{"slug":"ink","name":"Teks","color":"#1d302a"},{"slug":"muted","name":"Teks sekunder","color":"#52685f"},{"slug":"white","name":"Putih","color":"#ffffff"}]},"spacing":{"units":["px","rem","em","%","vw"]},"typography":{"fluid":True,"fontFamilies":[{"slug":"system","name":"Sistem","fontFamily":"system-ui, -apple-system, Segoe UI, sans-serif"},{"slug":"serif","name":"Serif","fontFamily":"Georgia, Times New Roman, serif"}],"fontSizes":[{"slug":"small","name":"Kecil","size":"0.875rem"},{"slug":"medium","name":"Normal","size":"1rem"},{"slug":"large","name":"Besar","size":"1.5rem"},{"slug":"x-large","name":"Judul","size":"2.5rem"}]}},"styles":{"color":{"background":"#ffffff","text":"#1d302a"},"spacing":{"blockGap":"24px","padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"typography":{"fontFamily":"var:preset|font-family|system","fontSize":"1rem","lineHeight":"1.75"},"elements":{"heading":{"typography":{"fontFamily":"var:preset|font-family|serif","fontWeight":"500","lineHeight":"1.25"},"color":{"text":"#143e32"}},"link":{"color":{"text":"#143e32"}},"button":{"border":{"radius":"5px"},"color":{"background":"#143e32","text":"#ffffff"},"spacing":{"padding":{"top":"12px","right":"22px","bottom":"12px","left":"22px"}},"typography":{"fontSize":".9rem","fontWeight":"600"}}},"css":css},"templateParts":[{"name":"header","title":"Kepala halaman","area":"header"},{"name":"footer","title":"Kaki halaman","area":"footer"}]}
-    # White heading color inside the dark homepage hero.
-    config["styles"]["css"]+="\n.ps-hero h1,.ps-hero h2{color:#fff}"
+    # Keep wide sections wide inside WordPress constrained layout wrappers.
+    config["styles"]["css"]+="""
+.ps-hero h1,.ps-hero h2{color:#fff}
+.ps-masthead,.ps-navigation{margin-block-start:0!important}
+.ps-masthead>.ps-brand,.ps-navigation>.wp-block-navigation,.ps-hero>.alignwide>.wp-block-columns,.ps-quick>.alignwide>.wp-block-columns,.ps-main>.alignwide>*,.ps-footer>.alignwide>*{max-width:none}
+.ps-hero h1{font-size:clamp(2.3rem,4.3vw,3.6rem)}
+.ps-hero .wp-block-column:first-child{flex-basis:60%!important}
+.ps-hero .wp-block-column:last-child{flex-basis:40%!important}
+.ps-brand .wp-block-site-logo img{height:56px;width:auto;object-fit:contain}
+"""
     write("wordpress/pundungsari/theme.json",json.dumps(config,ensure_ascii=False,indent=2))
     write("wordpress/pundungsari/parts/header.html",wp_header())
     write("wordpress/pundungsari/parts/footer.html",wp_footer())
@@ -301,7 +315,7 @@ html{scroll-behavior:smooth}body{line-height:1.75}a{text-underline-offset:4px}a:
     write("wordpress/pundungsari/templates/search.html",start+group(search,"ps-page",align="wide",tag="main")+finish)
     write("wordpress/pundungsari/templates/404.html",start+group(heading("Halaman tidak ditemukan",1)+para("Gunakan pencarian untuk menemukan informasi yang diperlukan.")+block("search",attrs={"label":"Cari informasi desa","buttonText":"Cari"},selfclose=True),"ps-page",tag="main")+finish)
     write("wordpress/pundungsari/README.txt","""PUNDUNGSARI — TEMA WORDPRESS
-Versi 1.0.0 | GPL-2.0-or-later
+Versi 1.0.1 | GPL-2.0-or-later
 
 Tema blok dengan halaman depan, daftar berita, artikel, halaman, arsip,
 pencarian, dan halaman 404. Memakai blok bawaan WordPress; tidak memerlukan
@@ -371,13 +385,23 @@ def build_meta():
     write(".nojekyll","")
     write("README.md","""# Website Desa Pundungsari
 
-Situs publik GitHub Pages dan paket tema WordPress menggunakan konten yang sama.
+Situs GitHub Pages dan WordPress dimulai dari sumber konten yang sama.
 Pembaruan 18 Oktober 2026: halaman publik terpisah, layanan yang dapat dicari,
-berita dengan tautan sendiri, identitas resmi, dan paket WordPress.
+berita dengan tautan sendiri, identitas resmi, dan WordPress aktif di hosting gratis.
 
 ## Situs publik
 
 https://marom2386-ops.github.io/website-desa-pundungsari/
+
+WordPress: https://desa-pundungsari.great-site.net/
+Dasbor: https://desa-pundungsari.great-site.net/wp-admin/
+
+Hosting WordPress memakai paket gratis InfinityFree dengan HTTPS. Tema Pundungsari
+1.0.1, delapan halaman, 17 panduan layanan, empat ringkasan berita, dan lambang
+sudah dipasang. WordPress diperbarui ke 7.1.3 saat penyiapan.
+
+Perubahan melalui dasbor WordPress tersimpan pada hosting WordPress. Perubahan
+situs GitHub dilakukan melalui repositori; keduanya tidak tersinkron otomatis.
 
 ## Memperbarui konten pada GitHub
 
@@ -396,9 +420,10 @@ telah diganti dengan pusat pengelola yang menjelaskan jalur pengelolaan nyata.
 - panduan-wordpress.html: panduan pemasangan dan pengelolaan.
 - wordpress/pundungsari/: sumber tema blok.
 
-WordPress memerlukan hosting yang mendukung PHP dan basis data. Paket ini tidak
-memasang WordPress pada GitHub Pages. Tidak ada akun hosting baru, pembelian,
-atau domain baru yang dibuat oleh perubahan ini.
+WordPress memakai hosting yang mendukung PHP dan basis data. GitHub tetap
+menyimpan sumber website, tema, dan paket pemasangan. Akun dan kata sandi
+pemasangan tidak disimpan dalam repositori. Jangan mengimpor kembali XML ke
+situs aktif karena konten awal sudah dimasukkan.
 
 Tema memakai blok bawaan WordPress dan Global Styles, tanpa pembuat halaman
 berbayar. Berita dikelola sebagai Pos dan informasi layanan sebagai Halaman.
@@ -418,8 +443,10 @@ Data warga, KK, NIK, token, dan kata sandi tidak termasuk dalam paket.
 
 Pemeriksaan tautan lokal, judul, metadata, struktur halaman, paket tema,
 struktur blok WordPress, XML impor, angka publik, dan perilaku pencarian.
-Render WordPress pada hosting serta pemeriksaan visual browser tetap perlu
-dilakukan setelah hosting tersedia.
+Halaman WordPress, rincian layanan, artikel, navigasi, gambar, serta tautan
+kontak diperiksa melalui browser pada hosting aktif. Tata letak desktop
+disesuaikan setelah pemeriksaan visual. Periksa kembali konten dan tampilan
+melalui perangkat warga setelah setiap pembaruan besar.
 """)
     write("docs/CATATAN_VERIFIKASI.md","""# Catatan verifikasi sebelum pengumuman resmi
 
