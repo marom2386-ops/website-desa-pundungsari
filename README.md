@@ -12,7 +12,7 @@ WordPress: https://desa-pundungsari.great-site.net/
 Dasbor: https://desa-pundungsari.great-site.net/wp-admin/
 
 Hosting WordPress memakai paket gratis InfinityFree dengan HTTPS. Tema Pundungsari
-2.0.0, delapan halaman, 17 panduan layanan, empat ringkasan berita, dan lambang
+2.0.1, delapan halaman, 17 panduan layanan, empat ringkasan berita, dan lambang
 sudah dipasang. WordPress diperbarui ke 7.1.3 saat penyiapan.
 
 Perubahan melalui dasbor WordPress tersimpan pada hosting WordPress. Perubahan

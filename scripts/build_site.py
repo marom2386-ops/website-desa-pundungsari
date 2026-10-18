@@ -289,7 +289,7 @@ Theme Name: Pundungsari
 Theme URI: https://github.com/marom2386-ops/website-desa-pundungsari
 Author: Pemerintah Desa Pundungsari
 Description: Tema blok untuk informasi publik Desa Pundungsari. Dikelola melalui Editor Situs dan blok bawaan WordPress.
-Version: 2.0.0
+Version: 2.0.1
 Requires at least: 6.6
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -333,7 +333,7 @@ Tags: block-patterns, full-site-editing, accessibility-ready
     write("wordpress/pundungsari/templates/search.html",start+group(search,"ps-page",align="wide",tag="main")+finish)
     write("wordpress/pundungsari/templates/404.html",start+group(heading("Halaman tidak ditemukan",1)+para("Gunakan pencarian untuk menemukan informasi yang diperlukan.")+block("search",attrs={"label":"Cari informasi desa","buttonText":"Cari"},selfclose=True),"ps-page",tag="main")+finish)
     write("wordpress/pundungsari/README.txt","""PUNDUNGSARI — TEMA WORDPRESS
-Versi 2.0.0 | GPL-2.0-or-later
+Versi 2.0.1 | GPL-2.0-or-later
 
 Tema blok dengan halaman depan, daftar berita, artikel, halaman, arsip,
 pencarian, dan halaman 404. Memakai blok bawaan WordPress; tidak memerlukan
@@ -417,7 +417,7 @@ WordPress: https://desa-pundungsari.great-site.net/
 Dasbor: https://desa-pundungsari.great-site.net/wp-admin/
 
 Hosting WordPress memakai paket gratis InfinityFree dengan HTTPS. Tema Pundungsari
-2.0.0, delapan halaman, 17 panduan layanan, empat ringkasan berita, dan lambang
+2.0.1, delapan halaman, 17 panduan layanan, empat ringkasan berita, dan lambang
 sudah dipasang. WordPress diperbarui ke 7.1.3 saat penyiapan.
 
 Perubahan melalui dasbor WordPress tersimpan pada hosting WordPress. Perubahan

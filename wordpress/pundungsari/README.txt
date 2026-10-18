@@ -1,5 +1,5 @@
 PUNDUNGSARI — TEMA WORDPRESS
-Versi 2.0.0 | GPL-2.0-or-later
+Versi 2.0.1 | GPL-2.0-or-later
 
 Tema blok dengan halaman depan, daftar berita, artikel, halaman, arsip,
 pencarian, dan halaman 404. Memakai blok bawaan WordPress; tidak memerlukan
